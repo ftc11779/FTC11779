@@ -1,0 +1,28 @@
+{
+  "name": "ftc11779",
+  "version": "1.0.0",
+  "description": "FTC 11779 Team Website",
+  "main": "public/index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "bs-init": "browser-sync init",
+    "bs-start": "gulp bs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ftc11779/FTC11779.git"
+  },
+  "keywords": [
+    "FTC11779"
+  ],
+  "author": "parkjongwon.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ftc11779/FTC11779/issues"
+  },
+  "homepage": "https://github.com/ftc11779/FTC11779#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "^4.0.0"
+  }
+}
