@@ -1,5 +1,6 @@
 <?php
   DEFINE("CUSTOM_CSS", "./lib/css/");
+  DEFINE("CUSTOM_JS", "./lib/js/");
   DEFINE("BOOTSTRAP", "./lib/vendor/bootstrap-4.1.3/");
   DEFINE("JQUERY", "./lib/vendor/jquery-3.3.1/");
 ?>
@@ -23,16 +24,28 @@
 
   <body>
 
-    <div id="masthead" class="masthead container-fluid bg-img text-center">
-      <div class="masthead-nav">
-        <ul class="masthead-navbar nav justify-content-center">
-          <li class="nav-item"><a class="nav-link active" href="#">Active</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
-          <!-- <li class="nav-item"><a class="nav-link disabled" href="#">Disabled</a></li> -->
-        </ul>
+    <div id="masthead" class="masthead container-fluid bg-img">
+      <div class="masthead-nav-wrapper">
+        <div class="masthead-nav clearfix">
+          <ul class="masthead-navbar">
+            <li><a class="no-a masthead-brand">FTC 11779</a></li>
+          </ul>
+          <ul class="masthead-navbar masthead-navbar-nobrand float-right">
+            <li><a href="#"><span>About</span></a></li>
+            <li><a href="#"><span>Seasons</span></a></li>
+            <li><a href="#"><span>Awards</span></a></li>
+            <li><a href="#"><span>Sponsorship</span></a></li>
+          </ul>
+        </div>
       </div>
-      <div class="masthead-wrapper">
+      <div class="masthead-background">
+        <!-- <iframe id="ytplayer" type="text/html" width="100%" height="100%" src="https://www.youtube.com/embed/Un5SEJ8MyPc?start=37" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
+        <!-- https://developers.google.com/youtube/player_parameters -->
+        <!-- <iframe id="masthead-ytplayer" type="text/html" width="100%" height="100%" src="https://www.youtube.com/embed/Un5SEJ8MyPc?start=37&end=136&autoplay=1&loop=1&playlist=Un5SEJ8MyPc&controls=0&disablekb=0&fs=0&mute=1&modestbranding=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
+        <video width="100%" height="100%" autoplay loop muted src="./lib/vid/masthead.mp4">Your browser does not support the video tag.</video>
+      </div>
+      <div class="masthead-background-layer"></div>
+      <div class="masthead-wrapper text-center">
         <div class="masthead-title display-1">FTC 11779</div>
         <div class="masthead-subtitle h2">Allendale Columbia School</div>
         <div class="spacing vertical taller"></div>
@@ -71,8 +84,9 @@
     </div>
     <br />
 
-    <script type="text/javascript" src="<?php echo JQUERY."jquery.min.js?v=".filemtime(JQUERY."jquery.min.js"); ?>"></script>
-    <script type="text/javascript" src="<?php echo BOOTSTRAP."js/bootstrap.min.js?v=".filemtime(BOOTSTRAP."js/bootstrap.min.js"); ?>"></script>
+    <script type="text/javascript" src="<?php echo JQUERY."jquery.min.js"; ?>"></script>
+    <script type="text/javascript" src="<?php echo BOOTSTRAP."js/bootstrap.min.js"; ?>"></script>
+    <script type="text/javascript" src="<?php echo CUSTOM_JS."home.js?v=".filemtime(CUSTOM_JS."home.js"); ?>"></script>
   </body>
 
 </html>

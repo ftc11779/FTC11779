@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "bs-init": "browser-sync init",
-    "bs-start": "gulp bs"
+    "bs": "gulp bs",
+    "sass": "sass --watch ./public/lib/sass/:./public/lib/css/"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,8 @@
   "homepage": "https://github.com/ftc11779/FTC11779#readme",
   "devDependencies": {
     "browser-sync": "^2.26.3",
-    "gulp": "^4.0.0"
+    "gulp": "^4.0.0",
+    "sass": "^1.14.3",
+    "wepback": "^1.0.0"
   }
 }
