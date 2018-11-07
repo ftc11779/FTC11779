@@ -199,18 +199,7 @@
 
     <div id="sponsor" class="block">
       <div class="column columnf column1"></div>
-      <div class="column columnm columnmb column2" style="z-index:5">
-        <div class="item custom-item-spt">
-          <div class="box-wrapper custom-box-spt rellax" data-rellax-speed="2">
-            <div class="box">
-              <div class="box-up"><img src="./lib/svg/shaking-hands.svg" /></div>
-              <div class="box-content">Join our journey</div>
-              <div class="box-bottom">
-                <div class="box-bottom-btn custom-box-spt-btn"><a href="./sponsor.php">sponsor us</a></div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="column columnm column2" style="z-index:5">
         <div class="item custom-item-spl">
           <div class="shape rellax sliding" data-rellax-speed="2">
             <div class="shape-content">
@@ -220,19 +209,26 @@
           </div>
         </div>
       </div>
-      <div class="column columnm column3"></div>
-      <div class="column columnm columnmb columnmbl column4" style="z-index:5">
-        <div class="item custom-item-spb">
-          <div class="box-wrapper custom-box-spb rellax" data-rellax-speed="-2">
+      <div class="column columnm columnmb column3">
+        <div class="item custom-item-spt">
+          <div class="box-wrapper custom-box-spt rellax" data-rellax-speed="2">
             <div class="box">
-              <div class="box-up"><img src="./lib/svg/notification-70.svg" /></div>
-              <div class="box-content">Let's talk :)</div>
+              <div class="box-up"><img src="./lib/svg/shaking-hands.svg" /></div>
+              <div class="box-content">Join our journey</div>
               <div class="box-bottom">
-                <div class="box-bottom-btn custom-box-spb-btn"><a href="mailto:ftc11779@allendalecolumbia.org">contact us</a></div>
+                <div class="box-bottom-btn custom-box-spt-btn"><a href="./sponsor.php">sponsor us</a></div>
+              </div>
+            </div>
+            <div class="shape">
+              <div class="shape-content">
+                <div class="shape-icon"><img src="./lib/svg/astronaut.svg" /></div>
+                <div class="shape-name">Astronaut</div>
               </div>
             </div>
           </div>
         </div>
+      </div>
+      <div class="column columnm column4" style="z-index:5">
         <div class="item custom-item-spr">
           <div class="shape rellax sliding" data-rellax-speed="-2">
             <div class="shape-content">
@@ -242,7 +238,25 @@
           </div>
         </div>
       </div>
-      <div class="column columnm column5"></div>
+      <div class="column columnm columnmb columnmbl column5">
+        <div class="item custom-item-spb">
+          <div class="box-wrapper custom-box-spb rellax" data-rellax-speed="-2">
+            <div class="shape">
+              <div class="shape-content">
+                <div class="shape-icon"><img src="./lib/svg/planet.svg" /></div>
+                <div class="shape-name">Planet</div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="box-up"><img src="./lib/svg/notification-70.svg" /></div>
+              <div class="box-content">Let's talk :)</div>
+              <div class="box-bottom">
+                <div class="box-bottom-btn custom-box-spb-btn"><a href="mailto:ftc11779@allendalecolumbia.org">contact us</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="column columnl column6"></div>
     </div>
 

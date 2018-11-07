@@ -338,25 +338,45 @@ a.proper-a:hover, a.proper-a:active {
 }
 .shape.sliding {
   position: absolute;
-  height: 250px;
+  height: 180px;
   width: 100%;
   border-radius: 0;
   background-color: #6eedcb;
 }
+@media (min-width: 992px) {
+  .shape.sliding {
+    height: 250px;
+  }
+}
 .shape.sliding::before, .shape.sliding::after {
   content: " ";
   position: absolute;
-  height: 100px;
+  height: 60px;
   width: 100%;
   background-color: inherit;
   transform: skewY(-10deg);
   z-index: -1;
 }
+@media (min-width: 992px) {
+  .shape.sliding::before, .shape.sliding::after {
+    height: 100px;
+  }
+}
 .shape.sliding::before {
-  top: -50px;
+  top: -30px;
+}
+@media (min-width: 992px) {
+  .shape.sliding::before {
+    top: -50px;
+  }
 }
 .shape.sliding::after {
-  bottom: -50px;
+  bottom: -30px;
+}
+@media (min-width: 992px) {
+  .shape.sliding::after {
+    bottom: -50px;
+  }
 }
 .shape.sliding .shape-content {
   position: absolute;
@@ -367,8 +387,13 @@ a.proper-a:hover, a.proper-a:active {
   transform: translate(-50%, -50%);
 }
 .shape.sliding .shape-icon img {
-  height: 100px;
   width: auto;
+  height: 70px;
+}
+@media (min-width: 992px) {
+  .shape.sliding .shape-icon img {
+    height: 100px;
+  }
 }
 .shape.sliding .shape-name {
   padding-top: 10px;
@@ -751,7 +776,13 @@ a.proper-a:hover, a.proper-a:active {
   }
 }
 .custom-item-sdt .shape, .custom-item-sdb .shape {
+  height: 250px;
   transition: opacity 0.5s cubic-bezier(0.6, 0.1, 0.3, 0.8);
+}
+.custom-item-sdt .shape::before, .custom-item-sdt .shape::after, .custom-item-sdb .shape::before, .custom-item-sdb .shape::after {
+  content: " ";
+  position: absolute;
+  height: 100px;
 }
 .custom-item-sdt:hover > .shape, .custom-item-sdt:active > .shape, .custom-item-sdb:hover > .shape, .custom-item-sdb:active > .shape {
   opacity: 0.88;
@@ -766,9 +797,14 @@ a.proper-a:hover, a.proper-a:active {
 .custom-item-sdb .shape {
   background-color: #e0708f;
 }
+.custom-item-spt .shape, .custom-item-spl .shape {
+  background-color: #4412e3;
+}
+.custom-item-spb .shape, .custom-item-spr .shape {
+  background-color: #6eedcb;
+}
 .custom-item-spl, .custom-item-spr {
   display: block;
-  position: absolute;
   width: 100%;
   left: 0;
 }
@@ -778,29 +814,24 @@ a.proper-a:hover, a.proper-a:active {
   }
 }
 .custom-item-spl {
-  top: 136%;
+  bottom: -50%;
 }
 @media (min-width: 992px) {
   .custom-item-spl {
     top: 115%;
+    bottom: auto;
   }
 }
-.custom-item-spl .shape {
-  background-color: #4412e3;
-}
 .custom-item-spr {
-  top: -69%;
+  bottom: 175%;
 }
 @media (min-width: 992px) {
   .custom-item-spr {
     top: -50%;
+    bottom: auto;
   }
 }
-.custom-item-spr .shape {
-  background-color: #6eedcb;
-}
 .custom-item-spt, .custom-item-spb {
-  position: absolute;
   width: 100%;
   padding: 0 10px;
   text-align: center;
@@ -808,11 +839,20 @@ a.proper-a:hover, a.proper-a:active {
 @media (min-width: 992px) {
   .custom-item-spt, .custom-item-spb {
     padding: 0 20px;
-    right: calc(-100% - 1px);
+  }
+}
+.custom-item-spt .shape, .custom-item-spb .shape {
+  width: 100%;
+  color: #eee;
+  border-radius: 0;
+}
+@media (min-width: 992px) {
+  .custom-item-spt .shape, .custom-item-spb .shape {
+    display: none;
   }
 }
 .custom-item-spt {
-  top: 89%;
+  top: 78%;
 }
 @media (min-width: 992px) {
   .custom-item-spt {
@@ -820,7 +860,7 @@ a.proper-a:hover, a.proper-a:active {
   }
 }
 .custom-item-spb {
-  top: -25%;
+  top: -50%;
 }
 @media (min-width: 992px) {
   .custom-item-spb {
@@ -917,6 +957,12 @@ a.proper-a:hover, a.proper-a:active {
     width: 120px;
   }
 }
+.custom-box-spt .shape, .custom-box-spb .shape {
+  padding: 20px 0;
+}
+.custom-box-spt .shape .shape-icon img, .custom-box-spb .shape .shape-icon img {
+  height: 80px;
+}
 .custom-box-spt-btn {
   color: #e0708f;
 }
@@ -926,6 +972,9 @@ a.proper-a:hover, a.proper-a:active {
 .custom-box-spt-btn a:hover, .custom-box-spt-btn a:active {
   background-color: #e0708f;
 }
+.custom-box-spt .shape {
+  margin-top: 60px;
+}
 .custom-box-spb-btn {
   color: #f0e550;
 }
@@ -934,6 +983,9 @@ a.proper-a:hover, a.proper-a:active {
 }
 .custom-box-spb-btn a:hover, .custom-box-spb-btn a:active {
   background-color: #f0e550;
+}
+.custom-box-spb .shape {
+  margin-bottom: 60px;
 }
 
 /*# sourceMappingURL=ftc11779.css.map */
