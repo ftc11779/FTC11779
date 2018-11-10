@@ -89,7 +89,7 @@
       <div class="column columnf column1"></div>
       <div class="column columnm column2">
         <div class="item custom-item-bww">
-          <div class="rellax" data-rellax-speed="2">
+          <div data-paroller-factor="0.3">
             <div class="word">we</div>
             <div class="word">are</div>
             <div class="word">the</div>
@@ -98,11 +98,11 @@
         </div>
       </div>
       <div class="column columnm columnmb column3">
-        <div class="item custom-item-bwi">
-          <img class="rellax" data-rellax-speed="-7" src="./lib/img/sky-jar.jpg" />
+        <div class="item custom-item-bwi" style="padding-top:50px;">
+          <img class="scrollar-custom" src="./lib/img/sky-jar.jpg" />
         </div>
         <div class="item custom-item-bwac2">
-          <div class="shape square rellax" data-rellax-speed="3" style="transform:translate3d(0px, 0px, 0px) translateX(-50%) rotate(45deg);"></div>
+          <div class="shape square" data-paroller-factor="0.3" style="transform:translateX(-50%) rotate(45deg);"></div>
         </div>
       </div>
       <div class="column columnm columnmb columnmbl column4" style="z-index:5;">
@@ -284,7 +284,9 @@
 
     <script type="text/javascript" src="<?php echo JQUERY."jquery.min.js"; ?>"></script>
     <!-- <script type="text/javascript" src="./lib/vendor/parallax.js-1.5.0/parallax.min.js"></script> -->
-    <script type="text/javascript" src="./lib/vendor/rellax-1.7.1/rellax.min.js"></script>
+    <!-- <script type="text/javascript" src="./lib/vendor/rellax-1.7.1/rellax.js"></script> -->
+    <!-- <script type="text/javascript" src="./lib/vendor/paroller.js-1.4.0/jquery.paroller.min.js"></script> -->
+    <script type="text/javascript" src="./lib/vendor/scrollar/scrollar.js"></script>
     <script type="text/javascript" src="<?php echo BOOTSTRAP."js/bootstrap.min.js"; ?>"></script>
     <script type="text/javascript" src="<?php echo CUSTOM_JS."home.js?v=".filemtime(CUSTOM_JS."home.js"); ?>"></script>
   </body>

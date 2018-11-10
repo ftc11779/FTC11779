@@ -4,7 +4,18 @@
 
   // $(document).on("scroll.detectScroll", detectScroll);
 
-  var rellax = new Rellax(".rellax");
+  // https://tgomilar.github.io/paroller.js/#usage
+  // $("[data-paroller-factor]").paroller({
+  //   type: "foreground",
+  //   direction: "vertical",
+  // });
+
+  var scrollar = new Scrollar(".scrollar-custom", {
+    wrapper: ".custom-item-bwi",
+  });
+
+
+  // var rellax = new Rellax(".rellax");
   // var rellax = new Rellax("#bow .rellax", {
   //   wrapper: "#bow",
   //   relativeToWrapper: true,
@@ -39,4 +50,4 @@
     }, navTrigLength);
   });
 
-}(jQuery));
+})(jQuery);

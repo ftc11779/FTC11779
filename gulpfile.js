@@ -10,6 +10,6 @@ gulp.task("bs", function(){
 		notify: false,
 		watch: true,
 		watchEvents: ["change"],
-		files: ["./public/*.php", lib.concat("css/*.css"), lib.concat("img/*.[jpg,png]"), lib.concat("js/*.js")],
+		files: ["./public/*.php", lib.concat("css/*.css"), lib.concat("img/*.[jpg,png]"), lib.concat("js/*.js"), lib.concat("vendor/scrollar/*.js")],
 	});
 });

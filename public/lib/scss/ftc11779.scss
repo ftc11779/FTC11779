@@ -285,10 +285,10 @@ a.proper-a{
       & .shape{height:80px;width:80px;background-color:$ftcyellow;}
     }
     // bow words
-    &-bww{position:relative;margin-top:95%;color:#dadada;font-size:80px;letter-spacing:2px;line-height:normal;}
+    &-bww{position:relative;margin-top:30%;color:#dadada;font-size:80px;letter-spacing:2px;line-height:normal;}
     // bow image
     &-bwi{
-      top:-40%;
+      top:3%;
       @media (max-width: 992px){position:absolute;height:auto;width:130%;right:0;}
     }
     // bow content

@@ -599,14 +599,14 @@ a.proper-a:hover, a.proper-a:active {
 }
 .custom-item-bww {
   position: relative;
-  margin-top: 95%;
+  margin-top: 30%;
   color: #dadada;
   font-size: 80px;
   letter-spacing: 2px;
   line-height: normal;
 }
 .custom-item-bwi {
-  top: -40%;
+  top: 3%;
 }
 @media (max-width: 992px) {
   .custom-item-bwi {
