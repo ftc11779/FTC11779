@@ -81,10 +81,10 @@
       else throw new Error("The wrapper you are trying to select ["+(self.conf.wrapper)+"] doesn't exist.");
     } else self.wrapper = document;
 
-    // returns current scroll top based on wrapper target (default is document)
-    cpos = function(isY = true, wrapper){
+    // returns current scroll top based on wrapper target (default is window)
+    cpos = function(isY = true, wrapper = window){
       if (!isY) return; // currently only support y
-      return wrapper ? isNode(wrapper).scrollTop : window.scrollTop;
+      return isNode(wrapper).scrollY;
     };
 
     // scroll position
@@ -196,10 +196,14 @@
         } else {
           // wrapper is document/window
           let fakeWrapperTop;
-          // fake wrapper = centers the block to the window
-          // calculation: abs - (window height/2 - block height half)
-          fakeWrapperTop = block.offsetY.abs - (size.window.height.half - block.mtdt.height.half);
-          toWrapper = pos.cy - fakeWrapperTop;
+          // if block is within the first window height of the document, set toWrapper to pos.cy
+          if (block.offsetY.abs + block.mtdt.height.full < size.window.height.full) toWrapper = pos.cy;
+          else {
+            // fake wrapper = centers the block to the window
+            // calculation: abs - (window height/2 - block height half)
+            fakeWrapperTop = block.offsetY.abs - (size.window.height.half - block.mtdt.height.half);
+            toWrapper = pos.cy - fakeWrapperTop;
+          }
         }
 
         positions = setPosition(elem, toWrapper, block);
