@@ -11,7 +11,8 @@
   // });
 
   var scrollar = new Scrollar(".scrollar-custom", {
-    wrapper: ".custom-item-bwi",
+    // wrapper: "#bow .column3",
+    wrapper: null,
   });
 
 

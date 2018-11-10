@@ -72,7 +72,7 @@
           <video class="rellax" data-rellax-speed="2" width="100%" height="auto" autoplay loop muted src="./lib/vid/masthead.mp4">Your browser does not support the video tag.</video>
         </div>
         <div class="item custom-item-mhac1">
-          <div class="shape square rellax" data-rellax-speed="-4" style="transform:translate3d(0px, 0px, 0px) translateX(50%) rotate(45deg);"></div>
+          <div class="shape square rellax scrollar-custom" data-rellax-speed="-4" style="transform:translate3d(0px, 0px, 0px) translateX(50%) rotate(45deg);"></div>
         </div>
         <div class="item custom-item-mhac2">
           <div class="shape square rellax" data-rellax-speed="-2" style="transform:translate3d(0px, 0px, 0px) translateX(20%) rotate(45deg);"></div>
@@ -98,8 +98,8 @@
         </div>
       </div>
       <div class="column columnm columnmb column3">
-        <div class="item custom-item-bwi" style="padding-top:50px;">
-          <img class="scrollar-custom" src="./lib/img/sky-jar.jpg" />
+        <div class="item custom-item-bwi">
+          <img class="scrollar-custom" data-scrollar-speed="1.3" src="./lib/img/sky-jar.jpg" />
         </div>
         <div class="item custom-item-bwac2">
           <div class="shape square" data-paroller-factor="0.3" style="transform:translateX(-50%) rotate(45deg);"></div>
