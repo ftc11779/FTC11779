@@ -10,9 +10,22 @@
   //   direction: "vertical",
   // });
 
-  var scrollar = new Scrollar(".scrollar-custom", {
-    // wrapper: "#bow .column3",
-    wrapper: null,
+  const scrollar = {};
+
+  scrollar.masthead = new Scrollar(".scrollar-masthead", {
+    wrapper: "#masthead",
+  });
+
+  scrollar.bow = new Scrollar(".scrollar-bow", {
+    wrapper: "#bow",
+  });
+
+  scrollar.flightdeck = new Scrollar(".scrollar-fd", {
+    wrapper: "#flightdeck",
+  });
+
+  scrollar.sidedeck = new Scrollar(".scrollar-sd", {
+    wrapper: "#sidedeck",
   });
 
 

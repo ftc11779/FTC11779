@@ -87,6 +87,7 @@ a.proper-a{
 %bbt{border-bottom:1px solid transparent;}
 %commonTransition{transition:all 0.3s $ctcb;}
 %pgt{line-height:1.5;word-spacing:1.2px;}
+%valign{position:relative;top:50%;transform:translateY(-50%);}
 @mixin comtra($dur){transition:all $dur $ctcb;}
 @mixin comtras($type, $dur){transition:#{$type} $dur $ctcb;}
 @mixin talign($y:50%, $trx:-50%, $try:$trx, $x:$y){top:$y;left:$x;transform:translate($trx, $try);}
@@ -178,7 +179,7 @@ a.proper-a{
     &-b{height:400px;width:400px;}
   }
   &.sliding{
-    position:absolute;height:180px;width:100%;border-radius:0;background-color:$ftcgreen;
+    height:180px;width:100%;border-radius:0;background-color:$ftcgreen;
     @media (min-width: 992px){height:250px;}
     &::before,&::after{
       content:"\0020";position:absolute;height:60px;width:100%;background-color:inherit;transform:skewY(-10deg);z-index:-1;
@@ -284,12 +285,14 @@ a.proper-a{
       @media (min-width: 992px){left:100%;}
       & .shape{height:80px;width:80px;background-color:$ftcyellow;}
     }
+    // bow
+    &-bww,&-bwc{@extend %valign;}
     // bow words
-    &-bww{position:relative;margin-top:30%;color:#dadada;font-size:80px;letter-spacing:2px;line-height:normal;}
+    &-bww{color:#dadada;font-size:80px;letter-spacing:2px;line-height:normal;}
     // bow image
     &-bwi{
       // top:3%;
-      top:50%;transform:translateY(-50%);
+      @extend %valign;
       @media (max-width: 992px){position:absolute;height:auto;width:130%;right:0;}
     }
     // bow content
@@ -298,39 +301,39 @@ a.proper-a{
       @media (min-width: 992px){font-size:$fontbig;}
     }
     &-bwc{
-      position:absolute;margin-top:200%;padding-left:$ttid_;
-      @media (min-width: 992px){margin-top:140%;padding-left:$ttid;}
+      padding-left:$ttid_;
+      @media (min-width: 992px){padding-left:$ttid;}
     }
     &-bwac1{
-      position:absolute;top:20%;left:80%;z-index:1;
+      position:absolute;top:65%;left:80%;z-index:1;
       @media (min-width: 992px){left:150%;}
       & .shape{height:80px;width:80px;background-color:$ftcpurple;}
     }
     &-bwac2{
-      position:absolute;top:50%;left:0;z-index:1;
+      position:absolute;top:15%;left:0;z-index:1;
       & .shape{height:180px;width:180px;background-color:$ftcblue;}
     }
     // flightdeck
+    &-fdi,&-fdt{@extend %valign;}
     &-fdi{
-      top:-105%;
-      @media (max-width: 992px){position:absolute;height:auto;width:130%;top:-100%;left:0;}
+      @media (max-width: 992px){position:absolute;height:auto;width:130%;left:0;}
     }
     &-fdt{
-      position:absolute;top:63%;padding-right:$ttid_;text-align:right;
-      @media (min-width: 992px){width:200%;top:73%;left:calc(-100% - 1px);padding-right:$ttid;}
+      padding-right:$ttid_;text-align:right;
+      @media (min-width: 992px){width:200%;left:calc(-100% - 1px);padding-right:$ttid;}
     }
     &-fdac1{
-      position:absolute;top:-35%;left:0;z-index:1;
+      position:absolute;top:8%;left:0;z-index:1;
       & .shape{height:220px;width:220px;background-color:$ftcyellow;}
     }
     &-fdac2{
-      position:absolute;top:-20%;left:70%;z-index:1;
-      @media (min-width: 992px){top:-45%;left:100%;}
+      position:absolute;top:50%;left:70%;z-index:1;
+      @media (min-width: 992px){left:100%;}
       & .shape{height:150px;width:150px;background-color:$ftcgreen;}
     }
     &-fdac3{
-      position:absolute;top:-60%;left:150%;z-index:1;
-      @media (min-width: 992px){top:-10%;left:-100%;}
+      position:absolute;top:70%;left:150%;z-index:1;
+      @media (min-width: 992px){left:-100%;}
       & .shape{height:70px;width:70px;background-color:$ftcpurple;}
     }
     // sidedeck
@@ -341,7 +344,7 @@ a.proper-a{
       & .word{line-height:2;}
     }
     &-sdt,&-sdb{
-      display:block;position:absolute;width:100%;top:94%;z-index:10;transition:none;
+      display:block;position:absolute;width:100%;@extend %valign;z-index:10;transition:none;
       @media (min-width: 992px){right:calc(-100% - 1px);}
       & .shape{
         height:250px;@include comtras("opacity", 0.5s);
@@ -349,10 +352,7 @@ a.proper-a{
       }
       &:hover > .shape,&:active > .shape{opacity:0.88;@include comtras("opacity", 0.2s);}
     }
-    &-sdt{
-      top:-29%;
-      & .shape{background-color:$ftcblue;}
-    }
+    &-sdt .shape{background-color:$ftcblue;}
     &-sdb .shape{background-color:$ftcpink;}
     //
     // sponsor

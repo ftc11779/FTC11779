@@ -69,16 +69,16 @@
       <div class="column columnm column3"></div>
       <div class="column columnm columnmb columnmbl column4" style="z-index:4;">
         <div class="item custom-item-mhv">
-          <video class="rellax" data-rellax-speed="2" width="100%" height="auto" autoplay loop muted src="./lib/vid/masthead.mp4">Your browser does not support the video tag.</video>
+          <video class="scrollar-masthead" data-scrollar-speed="-0.2" width="100%" height="auto" autoplay loop muted src="./lib/vid/masthead.mp4">Your browser does not support the video tag.</video>
         </div>
         <div class="item custom-item-mhac1">
-          <div class="shape square rellax scrollar-custom" data-rellax-speed="-4" style="transform:translate3d(0px, 0px, 0px) translateX(50%) rotate(45deg);"></div>
+          <div class="shape square scrollar-masthead" data-scrollar-speed="0.5" style="transform:translateX(50%) rotate(45deg);"></div>
         </div>
         <div class="item custom-item-mhac2">
-          <div class="shape square rellax" data-rellax-speed="-2" style="transform:translate3d(0px, 0px, 0px) translateX(20%) rotate(45deg);"></div>
+          <div class="shape square scrollar-masthead" data-scrollar-speed="0.2" style="transform:translateX(20%) rotate(45deg);"></div>
         </div>
         <div class="item custom-item-mhac3">
-          <div class="shape square rellax" data-rellax-speed="-3" style="transform:translate3d(0px, 0px, 0px) rotate(45deg);"></div>
+          <div class="shape square scrollar-masthead" data-scrollar-speed="0.4" style="transform:rotate(45deg);"></div>
         </div>
       </div>
       <div class="column columnm column5"></div>
@@ -89,7 +89,7 @@
       <div class="column columnf column1"></div>
       <div class="column columnm column2">
         <div class="item custom-item-bww">
-          <div data-paroller-factor="0.3">
+          <div class="scrollar-bow" data-scrollar-speed="-0.3">
             <div class="word">we</div>
             <div class="word">are</div>
             <div class="word">the</div>
@@ -99,15 +99,15 @@
       </div>
       <div class="column columnm columnmb column3">
         <div class="item custom-item-bwi">
-          <img class="scrollar-custom" data-scrollar-speed="1.3" src="./lib/img/sky-jar.jpg" />
+          <img class="scrollar-bow" data-scrollar-speed="0.7" src="./lib/img/sky-jar.jpg" />
         </div>
         <div class="item custom-item-bwac2">
-          <div class="shape square" data-paroller-factor="0.3" style="transform:translateX(-50%) rotate(45deg);"></div>
+          <div class="shape square scrollar-bow" data-scrollar-speed="-0.6" style="transform:translateX(-50%) rotate(45deg);"></div>
         </div>
       </div>
       <div class="column columnm columnmb columnmbl column4" style="z-index:5;">
         <div class="item custom-item-bwc">
-          <div class="box-wrapper box-type-masthead-nmf custom-box-bwc rellax" data-rellax-speed="2">
+          <div class="box-wrapper box-type-masthead-nmf custom-box-bwc scrollar-bow" data-scrollar-speed="0.1">
             <div class="box">
               <div class="box-up"><img src="./lib/svg/multiple-19.svg" /></div>
               <div class="box-content">
@@ -118,7 +118,7 @@
           </div>
         </div>
         <div class="item custom-item-bwac1">
-          <div class="shape square rellax" data-rellax-speed="-3" style="transform:translate3d(0px, 0px, 0px) rotate(45deg);"></div>
+          <div class="shape square scrollar-bow" data-scrollar-speed="0.3" style="transform:rotate(45deg);"></div>
         </div>
       </div>
       <div class="column columnm column5"></div>
@@ -130,7 +130,7 @@
       <div class="column columnm column2"></div>
       <div class="column columnm columnmb column3" style="z-index:5;">
         <div class="item custom-item-fdt">
-          <div class="box-wrapper custom-box-fdt rellax" data-rellax-speed="2">
+          <div class="box-wrapper custom-box-fdt scrollar-fd" data-scrollar-speed="-0.4">
             <div class="box">
               <div class="box-up"><img src="./lib/svg/robot.svg" /></div>
               <div class="box-content">
@@ -143,18 +143,18 @@
           </div>
         </div>
         <div class="itetm custom-item-fdac1">
-          <div class="shape square rellax" data-rellax-speed="-2" style="transform:translate3d(0px, 0px, 0px) translateX(-20%) rotate(45deg);"></div>
+          <div class="shape square scrollar-fd" data-scrollar-speed="0.1" style="transform:translateX(-20%) rotate(45deg);"></div>
         </div>
         <div class="itetm custom-item-fdac3">
-          <div class="shape square rellax" data-rellax-speed="-3" style="transform:translate3d(0px, 0px, 0px) translateX(-50%) rotate(45deg);"></div>
+          <div class="shape square scrollar-fd" data-scrollar-speed="0.3" style="transform:translateX(-50%) rotate(45deg);"></div>
         </div>
       </div>
       <div class="column columnm columnmb columnmbl column4">
         <div class="item custom-item-fdi">
-          <img class="rellax" data-rellax-speed="-7" src="./lib/img/sky-sphinx.jpg" />
+          <img class="scrollar-fd" data-scrollar-speed="0.6" src="./lib/img/sky-sphinx.jpg" />
         </div>
         <div class="item custom-item-fdac2">
-          <div class="shape square rellax" data-rellax-speed="-4" style="transform:translate3d(0px, 0px, 0px) translateX(-20%) rotate(45deg);"></div>
+          <div class="shape square scrollar-fd" data-scrollar-speed="0.2" style="transform:translateX(-20%) rotate(45deg);"></div>
         </div>
       </div>
       <div class="column columnm column5"></div>
@@ -170,7 +170,7 @@
           <div class="word">Innovative</div>
         </div>
         <a href="./seasons.php" class="item custom-item-sdt">
-          <div class="shape rellax sliding" data-rellax-speed="-2">
+          <div class="shape sliding scrollar-sd" data-scrollar-speed="0.9">
             <div class="shape-content">
               <div class="shape-icon"><img src="./lib/svg/calendar-date-2.svg" /></div>
               <div class="shape-name"><span>Seasons</span></div>
@@ -185,7 +185,7 @@
           <div class="word">Experience</div>
         </div>
         <a href="./awards.php" class="item custom-item-sdb">
-          <div class="shape rellax sliding" data-rellax-speed="2">
+          <div class="shape sliding scrollar-sd" data-scrollar-speed="-0.9">
             <div class="shape-content">
               <div class="shape-icon"><img src="./lib/svg/winner.svg" /></div>
               <div class="shape-name"><span>Awards</span></div>
@@ -283,10 +283,7 @@
 
 
     <script type="text/javascript" src="<?php echo JQUERY."jquery.min.js"; ?>"></script>
-    <!-- <script type="text/javascript" src="./lib/vendor/parallax.js-1.5.0/parallax.min.js"></script> -->
-    <!-- <script type="text/javascript" src="./lib/vendor/rellax-1.7.1/rellax.js"></script> -->
-    <!-- <script type="text/javascript" src="./lib/vendor/paroller.js-1.4.0/jquery.paroller.min.js"></script> -->
-    <script type="text/javascript" src="./lib/vendor/scrollar/scrollar.js"></script>
+    <script type="text/javascript" src="./lib/vendor/scrollar-1.0.0/scrollar.js"></script>
     <script type="text/javascript" src="<?php echo BOOTSTRAP."js/bootstrap.min.js"; ?>"></script>
     <script type="text/javascript" src="<?php echo CUSTOM_JS."home.js?v=".filemtime(CUSTOM_JS."home.js"); ?>"></script>
   </body>
