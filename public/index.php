@@ -199,19 +199,10 @@
 
     <div id="sponsor" class="block">
       <div class="column columnf column1"></div>
-      <div class="column columnm column2" style="z-index:5">
-        <div class="item custom-item-spl">
-          <div class="shape rellax sliding" data-rellax-speed="2">
-            <div class="shape-content">
-              <div class="shape-icon"><img src="./lib/svg/astronaut.svg" /></div>
-              <div class="shape-name">Astronaut</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="column columnm columnmb column3">
+      <div class="column columnm column2"></div>
+      <div class="column columnm columnmb column3" style="z-index:5">
         <div class="item custom-item-spt">
-          <div class="box-wrapper custom-box-spt rellax" data-rellax-speed="2">
+          <div class="box-wrapper custom-box-spt scrollar-sponsor" data-scrollar-speed="0.6">
             <div class="box">
               <div class="box-up"><img src="./lib/svg/shaking-hands.svg" /></div>
               <div class="box-content">Join our journey</div>
@@ -219,32 +210,23 @@
                 <div class="box-bottom-btn custom-box-spt-btn"><a href="./sponsor.php">sponsor us</a></div>
               </div>
             </div>
-            <div class="shape">
+            <div class="shape sliding">
               <div class="shape-content">
                 <div class="shape-icon"><img src="./lib/svg/astronaut.svg" /></div>
-                <div class="shape-name">Astronaut</div>
+                <div class="shape-name"><span>Sponsor</span>Astronaut</div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="column columnm column4" style="z-index:5">
-        <div class="item custom-item-spr">
-          <div class="shape rellax sliding" data-rellax-speed="-2">
-            <div class="shape-content">
-              <div class="shape-icon"><img src="./lib/svg/planet.svg" /></div>
-              <div class="shape-name">Planet</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="column columnm columnmb columnmbl column5">
+      <div class="column columnm column4"></div>
+      <div class="column columnm columnmb columnmbl column5" style="z-index:5">
         <div class="item custom-item-spb">
-          <div class="box-wrapper custom-box-spb rellax" data-rellax-speed="-2">
-            <div class="shape">
+          <div class="box-wrapper custom-box-spb scrollar-sponsor" data-scrollar-speed="-0.6">
+            <div class="shape sliding">
               <div class="shape-content">
                 <div class="shape-icon"><img src="./lib/svg/planet.svg" /></div>
-                <div class="shape-name">Planet</div>
+                <div class="shape-name"><span>Sponsor</span>Planet</div>
               </div>
             </div>
             <div class="box">

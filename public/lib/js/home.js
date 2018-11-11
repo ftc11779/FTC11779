@@ -28,6 +28,10 @@
     wrapper: "#sidedeck",
   });
 
+  scrollar.sponsor = new Scrollar(".scrollar-sponsor", {
+    wrapper: "#sponsor",
+  });
+
 
   // var rellax = new Rellax(".rellax");
   // var rellax = new Rellax("#bow .rellax", {
