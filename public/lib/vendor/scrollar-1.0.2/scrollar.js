@@ -1,8 +1,8 @@
 // ------------------------------------------
 // Scrollar.js
-// v 1.0.0
+// v 1.0.2
 // Parallax library
-// Copyright (c) 2018 Park Jong Won (@park.vroom)
+// Copyright (c) 2018 Park Jong Won (@surname.park)
 // MIT license
 // ------------------------------------------
 
@@ -19,7 +19,7 @@
 
     // create new prototype object
     var
-      self, isObject, pos, size, calcSize, getHeight, isNode, cpos, blocks = [], notLegitWrappers = [], frame, frameId, frameClear, pause, transformProp,
+      self, isObject, posoy, poscy, size, windowElem, elemsNodeLen, calcSize, getHeight, isNode, cpos, blocks = [], notLegitWrappers = [], frame, frameId, frameClear, pause, transformProp,
       init, createBlock, cacheBlocks, getOffset, scrollState, updatePosition, animate, update;
 
     self = Object.create(Scrollar.prototype);
@@ -67,6 +67,7 @@
     }
     self.elems = elems;
     self.elemsNode = document.querySelectorAll(elems);
+    elemsNodeLen = self.elemsNode.length;
 
     // check if element is node, convert if not
     isNode = function(el){
@@ -79,20 +80,17 @@
       else throw new Error("The wrapper you are trying to select ["+(self.conf.wrapper)+"] doesn't exist.");
     } else self.wrapper = document;
 
+    windowElem = isNode(window);
+
     // returns current scroll top based on wrapper target (default is window)
-    cpos = function(isY, wrapper){
-      isY = isY || true;
-      wrapper = wrapper || window;
-      if (!isY) return; // currently only support y
-      return isNode(wrapper).scrollY;
+    // currently only support y
+    cpos = function(){
+      return windowElem.scrollY;
     };
 
     // scroll position
-    pos = {
-      // ox, cx
-      oy: 0, // old y value
-      cy: cpos(), // current (new) y value
-    };
+    posoy = 0; // old y value
+    poscy = cpos(); // current (new) y value
 
     calcSize = function(){
       var calc = {
@@ -137,7 +135,7 @@
       if (testEl.style.transform === null){
         var vendors = ["Webkit", "Moz", "ms"];
         for (var vendor in vendors){
-          if (testEl.style[ vendors[vendor] + "Transform" ] !== undefined) return vendors[vendor] + "Transform";
+          if (testEl.style[vendors[vendor] + "Transform"] !== undefined) return vendors[vendor] + "Transform";
         }
       }
       return "transform";
@@ -156,55 +154,53 @@
     // supports only vertical for now
     scrollState = function(){
       // update old
-      pos.oy = pos.cy;
+      posoy = poscy;
 
       // update new
-      pos.cy = cpos();
+      poscy = cpos();
 
       // true: scroll position DID change
       // false: scroll position DID NOT change
-      return pos.cy !== pos.oy && self.conf.vertical;
+      return poscy !== posoy && self.conf.vertical;
     };
 
     updatePosition = function(el, offsetY, block){
-      var transform, customTransform = "";
+      var customTransform = "";
 
       // if block data exists, apply speed & previous transform style
       // this filters out init updatePosition with no block data
       if (block){
-        offsetY = offsetY * block.travel.speed;
+        offsetY = (offsetY * block.travel.speed).toFixed(2);
         customTransform = " " + block.transform;
       }
 
       // apply transform value to style
-      transform = "translate3d(0px, " + offsetY + "px, 0px)" + customTransform;
-      el.style[transformProp] = transform;
+      el.style[transformProp] = "translate3d(0px, " + offsetY + "px, 0px) translateZ(0)" + customTransform;
 
-      return {offsetY: offsetY, transform: transform};
+      // return {offsetY: offsetY, transform: transform};
     };
 
     animate = function(){
-      var len = self.elemsNode.length;
-
-      for (var i = 0; i < len; i++){
-        var block, elem, toWrapper;
-
+      var block, elem, toWrapper, boffy, fakeWrapperTop, swhf, swhh;
+      swhf = size.window.height.full;
+      swhh = size.window.height.half;
+      for (var i = 0; i < elemsNodeLen; i++){
         block = blocks[i];
         elem = self.elemsNode[i];
+        boffy = block.offsetY;
 
         // check if wrapper is legit
-        if (block.offsetY.isWrapperLegit){
-          toWrapper = pos.cy - block.offsetY.wrapper;
+        if (boffy.isWrapperLegit){
+          toWrapper = poscy - boffy.wrapper;
         } else {
           // wrapper is document/window
-          var fakeWrapperTop;
-          // if block is within the first window height of the document, set toWrapper to pos.cy
-          if (block.offsetY.abs + block.mtdt.height.full < size.window.height.full) toWrapper = pos.cy;
+          // if block is within the first window height of the document, set toWrapper to poscy
+          if (boffy.abs + block.mtdt.height.full < swhf) toWrapper = poscy;
           else {
             // fake wrapper = centers the block to the window
             // calculation: abs - (window height/2 - block height half)
-            fakeWrapperTop = block.offsetY.abs - (size.window.height.half - block.mtdt.height.half);
-            toWrapper = pos.cy - fakeWrapperTop;
+            fakeWrapperTop = boffy.abs - (swhh - block.mtdt.height.half);
+            toWrapper = poscy - fakeWrapperTop;
           }
         }
 
@@ -300,11 +296,10 @@
     };
 
     cacheBlocks = function(){
-      var len = self.elemsNode.length;
       // delete blocks
       blocks = [];
       // create blocks
-      for (var i = 0; i < len; i++){
+      for (var i = 0; i < elemsNodeLen; i++){
         var block = createBlock(self.elemsNode[i], i);
         blocks.push(block);
       }
@@ -332,6 +327,9 @@
 
       // start animation frame loading
       update();
+
+      // refresh window node
+      windowElem = isNode(window);
 
       if (pause){
         window.addEventListener("resize", init);

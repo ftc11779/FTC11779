@@ -13,10 +13,11 @@
     <meta name="keywords" content="ftc,ftc11779,ac,acftc,allendalecolumbia,allendalecolumbiaftc" />
     <meta name="description" content="FTC team #11779" />
     <meta name="author" content="parkjongwon.com" />
-    <title>FTC 11779</title>
+    <title>Home - FTC 11779</title>
     <!-- <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900" rel="stylesheet"> -->
     <link rel="stylesheet" href="<?php echo BOOTSTRAP."css/bootstrap.min.css?v=".filemtime(BOOTSTRAP."css/bootstrap.min.css"); ?>" />
     <link rel="stylesheet" href="<?php echo CUSTOM_CSS."ftc11779.css?v=".filemtime(CUSTOM_CSS."ftc11779.css"); ?>" />
+    <link rel="stylesheet" href="<?php echo CUSTOM_CSS."home.css?v=".filemtime(CUSTOM_CSS."home.css"); ?>" />
     <noscript>
       You need to enable JavaScript to run this app.
     </noscript>
@@ -30,29 +31,7 @@
 
     -->
 
-    <div id="nav-trigger-wrapper" class="nav-trigger-wrapper nav-trig-sensitive">
-      <div class="nav-trigger">
-        <img class="nav-trigger-icon" src="./lib/svg/spaceship_color.svg" alt="MENU"></img>
-      </div>
-      <div class="nav-extra-wrapper">
-        <div class="nav-extra-btn nav-extra-btn-sponsor"><a href="./sponsor.php">Sponsor</a></div>
-        <div class="nav-extra-btn nav-extra-btn-contact"><a href="./contact.php">Contact</a></div>
-      </div>
-    </div>
-
-    <!-- <div id="nav" class="nav">
-      <div class="nav-overlay"></div>
-      <div class="nav-content">
-        <ul class="nav-navbar">
-          <li>Home</li>
-          <li>About</li>
-          <li>Seasons</li>
-          <li>Awards</li>
-          <li>Contact</li>
-          <li>Sponsor</li>
-        </ul>
-      </div>
-    </div> -->
+    <?php require_once "./lib/template/navs.php"; ?>
 
     <div id="masthead" class="block">
       <div class="column columnf column1"></div>
@@ -90,10 +69,10 @@
       <div class="column columnm column2">
         <div class="item custom-item-bww">
           <div class="scrollar-bow" data-scrollar-speed="-0.3">
-            <div class="word">we</div>
+            <div class="word">We</div>
             <div class="word">are</div>
             <div class="word">the</div>
-            <div class="word">aces</div>
+            <div class="word text-uppercase">aces</div>
           </div>
         </div>
       </div>
@@ -102,7 +81,7 @@
           <img class="scrollar-bow" data-scrollar-speed="0.7" src="./lib/img/sky-jar.jpg" />
         </div>
         <div class="item custom-item-bwac2">
-          <div class="shape square scrollar-bow" data-scrollar-speed="-0.6" style="transform:translateX(-50%) rotate(45deg);"></div>
+          <div class="shape square scrollar-bow" data-scrollar-speed="-0.4" style="transform:translateX(-50%) rotate(45deg);"></div>
         </div>
       </div>
       <div class="column columnm columnmb columnmbl column4" style="z-index:5;">
@@ -111,7 +90,7 @@
             <div class="box">
               <div class="box-up"><img src="./lib/svg/multiple-19.svg" /></div>
               <div class="box-content">
-                <div class="word"><a href="https://www.firstinspires.org/robotics/ftc" target="_blank" rel="noopener"><span>FTC</span></a> TEAM of</div>
+                <div class="word">The <a href="https://www.firstinspires.org/robotics/ftc" target="_blank" rel="noopener"><span>FTC</span></a> TEAM of</div>
                 <div class="word"><a href="https://allendalecolumbia.org" target="_blank" rel="noopener"><span>Allendale Columbia</span></a></div>
               </div>
             </div>
@@ -170,7 +149,7 @@
           <div class="word">Innovative</div>
         </div>
         <a href="./seasons.php" class="item custom-item-sdt">
-          <div class="shape sliding scrollar-sd" data-scrollar-speed="0.9">
+          <div class="shape sliding scrollar-sd" data-scrollar-speed="0.6">
             <div class="shape-content">
               <div class="shape-icon"><img src="./lib/svg/calendar-date-2.svg" /></div>
               <div class="shape-name"><span>Seasons</span></div>
@@ -185,7 +164,7 @@
           <div class="word">Experience</div>
         </div>
         <a href="./awards.php" class="item custom-item-sdb">
-          <div class="shape sliding scrollar-sd" data-scrollar-speed="-0.9">
+          <div class="shape sliding scrollar-sd" data-scrollar-speed="-0.4">
             <div class="shape-content">
               <div class="shape-icon"><img src="./lib/svg/winner.svg" /></div>
               <div class="shape-name"><span>Awards</span></div>
@@ -202,7 +181,7 @@
       <div class="column columnm column2"></div>
       <div class="column columnm columnmb column3" style="z-index:5">
         <div class="item custom-item-spt">
-          <div class="box-wrapper custom-box-spt scrollar-sponsor" data-scrollar-speed="0.6">
+          <div class="box-wrapper custom-box-spt scrollar-sponsor" data-scrollar-speed="0.4">
             <div class="box">
               <div class="box-up"><img src="./lib/svg/shaking-hands.svg" /></div>
               <div class="box-content">Join our journey</div>
@@ -222,7 +201,7 @@
       <div class="column columnm column4"></div>
       <div class="column columnm columnmb columnmbl column5" style="z-index:5">
         <div class="item custom-item-spb">
-          <div class="box-wrapper custom-box-spb scrollar-sponsor" data-scrollar-speed="-0.6">
+          <div class="box-wrapper custom-box-spb scrollar-sponsor" data-scrollar-speed="-0.4">
             <div class="shape sliding">
               <div class="shape-content">
                 <div class="shape-icon"><img src="./lib/svg/planet.svg" /></div>
@@ -233,7 +212,7 @@
               <div class="box-up"><img src="./lib/svg/notification-70.svg" /></div>
               <div class="box-content">Let's talk :)</div>
               <div class="box-bottom">
-                <div class="box-bottom-btn custom-box-spb-btn"><a href="mailto:ftc11779@allendalecolumbia.org">contact us</a></div>
+                <div class="box-bottom-btn custom-box-spb-btn"><a href="contact.php">contact us</a></div>
               </div>
             </div>
           </div>
@@ -265,8 +244,9 @@
 
 
     <script type="text/javascript" src="<?php echo JQUERY."jquery.min.js"; ?>"></script>
-    <script type="text/javascript" src="./lib/vendor/scrollar-1.0.0/scrollar.js"></script>
+    <script type="text/javascript" src="./lib/vendor/scrollar-1.0.2/scrollar.js"></script>
     <script type="text/javascript" src="<?php echo BOOTSTRAP."js/bootstrap.min.js"; ?>"></script>
+    <script type="text/javascript" src="<?php echo CUSTOM_JS."ftc11779.js?v=".filemtime(CUSTOM_JS."ftc11779.js"); ?>"></script>
     <script type="text/javascript" src="<?php echo CUSTOM_JS."home.js?v=".filemtime(CUSTOM_JS."home.js"); ?>"></script>
   </body>
 

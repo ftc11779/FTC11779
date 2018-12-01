@@ -49,23 +49,4 @@
   //   // wrapper: ".rellax-wrapper",
   // });
 
-  let navTrigLength = parseInt($(".nav-trigger-wrapper").css("transition-duration"), 10) * 1000;
-
-  $(document).on("click", ".nav-trigger-icon", function(){
-    let $sense = $(".nav-trig-sensitive"), len = $sense.length;
-    if (!len) return;
-
-    $sense.removeClass("travel-up travel-down");
-    $sense.addClass("travelling");
-
-    if ($sense.hasClass("active")){
-      $sense.addClass("travel-down");
-      $sense.removeClass("active");
-    } else  $sense.addClass("active travel-up");
-
-    setTimeout(function(){
-      $sense.removeClass("travelling");
-    }, navTrigLength);
-  });
-
 })(jQuery);
