@@ -45,10 +45,129 @@
           <div class="masthead-pdf-caption"><span>Sponsorship</span> <span>Package</span></div>
         </a>
       </div>
+      <div class="masthead-connect">
+        <svg viewbox="0 0 100 21">
+          <path fill="#f2f2f2" opacity="0.5" d="M0 30 V15 Q30 3 60 15 V30z" />
+          <path fill="#f2f2f2" d="M0 30 V12 Q30 17 55 12 T100 11 V30z" />
+        </svg>
+      </div>
     </div>
 
-    <div id="bow">
-      
+    <div id="sponsorships" class="ss">
+      <div class="ss-header">
+        <div class="ss-title ss-hl bolder">Sponsorships</div>
+      </div>
+      <div class="ss-body">
+        <div class="sr-only">Astronaut</div>
+        <div class="ss-level">
+          <div class="ss-level-row">
+            <div class="ss-level-col ss-level-order"><span>I</span></div>
+            <div class="ss-level-col ss-level-icon"><img src="./lib/svg/astronaut.svg" /></div>
+            <div class="ss-level-col ss-level-name">
+              <div>Astronaut</div>
+              <div class="ss-level-money">for<span>$100</span></div>
+            </div>
+          </div>
+          <div class="ss-level-row ss-level-benefits">
+            <div class="ss-level-benefit">
+              <div class="ss-level-benefit-point"><span></span></div>
+              <div class="ss-level-benefit-content">Sponspor name is listed on our website homepage and sponsorship page</div>
+            </div>
+            <!-- <div class="ss-level-benefit">
+              <div class="ss-level-benefit-point"><span></span></div>
+              <div class="ss-level-benefit-content"></div>
+            </div> -->
+          </div>
+        </div>
+        <div class="sr-only">Rocket</div>
+        <div class="ss-level">
+          <div class="ss-level-row">
+            <div class="ss-level-col ss-level-order"><span>II</span></div>
+            <div class="ss-level-col ss-level-icon"><img src="./lib/svg/rocket.svg" /></div>
+            <div class="ss-level-col ss-level-name">
+              <div>Rocket</div>
+              <div class="ss-level-money">for<span>$250</span></div>
+            </div>
+          </div>
+          <div class="ss-level-row ss-level-benefits">
+            <div class="ss-level-benefit">
+              <div class="ss-level-benefit-point"><span></span></div>
+              <div class="ss-level-benefit-content"><span class="colored">Astronaut</span> benefits</div>
+            </div>
+            <div class="ss-level-benefit">
+              <div class="ss-level-benefit-point"><span></span></div>
+              <div class="ss-level-benefit-content">Sponspor name is ...</div>
+            </div>
+          </div>
+        </div>
+        <div class="sr-only">Rover</div>
+        <div class="ss-level">
+          <div class="ss-level-row">
+            <div class="ss-level-col ss-level-order"><span>III</span></div>
+            <div class="ss-level-col ss-level-icon"><img src="./lib/svg/moon-rover.svg" /></div>
+            <div class="ss-level-col ss-level-name">
+              <div>Rover</div>
+              <div class="ss-level-money">for<span>$500</span></div>
+            </div>
+          </div>
+          <div class="ss-level-row ss-level-benefits">
+            <div class="ss-level-benefit">
+              <div class="ss-level-benefit-point"><span></span></div>
+              <div class="ss-level-benefit-content"><span class="colored">Rocket</span> benefits</div>
+            </div>
+            <div class="ss-level-benefit">
+              <div class="ss-level-benefit-point"><span></span></div>
+              <div class="ss-level-benefit-content">Sponspor name is listed at the end of FTC 11779&apos;s video</div>
+            </div>
+          </div>
+        </div>
+        <div class="sr-only">Station</div>
+        <div class="ss-level">
+          <div class="ss-level-row">
+            <div class="ss-level-col ss-level-order"><span>IV</span></div>
+            <div class="ss-level-col ss-level-icon"><img src="./lib/svg/satellite.svg" /></div>
+            <div class="ss-level-col ss-level-name">
+              <div>Station</div>
+              <div class="ss-level-money">for<span>$1000</span></div>
+            </div>
+          </div>
+          <div class="ss-level-row ss-level-benefits">
+            <div class="ss-level-benefit">
+              <div class="ss-level-benefit-point"><span></span></div>
+              <div class="ss-level-benefit-content"><span class="colored">Rover</span> benefits</div>
+            </div>
+            <div class="ss-level-benefit">
+              <div class="ss-level-benefit-point"><span></span></div>
+              <div class="ss-level-benefit-content">Sponsor name is listed on the FTC 11779 robot used in the competition</div>
+            </div>
+          </div>
+        </div>
+        <div class="sr-only">Planet</div>
+        <div class="ss-level">
+          <div class="ss-level-row">
+            <div class="ss-level-col ss-level-order"><span>V</span></div>
+            <div class="ss-level-col ss-level-icon"><img src="./lib/svg/planet.svg" /></div>
+            <div class="ss-level-col ss-level-name">
+              <div>Planet</div>
+              <div class="ss-level-money">for<span>$2500</span></div>
+            </div>
+          </div>
+          <div class="ss-level-row ss-level-benefits">
+            <div class="ss-level-benefit">
+              <div class="ss-level-benefit-point"><span></span></div>
+              <div class="ss-level-benefit-content"><span class="colored">Station</span> benefits</div>
+            </div>
+            <div class="ss-level-benefit">
+              <div class="ss-level-benefit-point"><span></span></div>
+              <div class="ss-level-benefit-content">Sponsor name is listed on the FTC 11779 team apparel and goodies</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="attribute">
+      <div>Some icons are made by Freepik from www.flaticon.com, licensed by CC 3.0 BY</div>
     </div>
 
     <script type="text/javascript" src="<?php echo JQUERY."jquery.min.js"; ?>"></script>
