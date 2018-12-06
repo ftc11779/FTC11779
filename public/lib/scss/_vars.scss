@@ -1,4 +1,4 @@
-$font-stack: "Source Sans Pro", sans-serif;
+$font-stack: "Nunito", sans-serif;
 $ftcdwhite: #dddfe0;
 $ftcwhite: #fff;
 $ftcdgray: #6d7275;
@@ -7,16 +7,26 @@ $ftclgray: #a3a3a3;
 // $ftcwhiteB: #fff;
 // $ftcblackB: #484848;
 $ftcblack: #1b1b1b;
-$ftcblue: #2d7acd;
-$ftcgreen: #6eedcb;
-$ftcpurple: #4412e3;
-$ftcpink: #e0708f;
-$ftcyellow: #f0e550;
-$ftcred: #d02120;
+$blue1: #2d7acd;
+$green1: #6eedcb;
+$purple1: #4412e3;
+$purple2: #4956D9;
+$pink1: #e0708f;
+// $orange1: #f28771;
+$orange1: #f26d52;
+$orange1d: #f55f41;
+$yellow1: #f0e550;
+$yellow1d: #eee344;
+$red1: #d02120;
 $fontbig: 40px;
 $fontbig_: 30px;
 $ttid: 50px; // text to image distatnce
 $ttid_: 15px;
+
+// screen
+$screenAT: 768px; // at least tablet
+$screenAS: 1024px; // at least small screen
+$screenAM: 1440px; // at least medium screen
 
 // common transition cubic bezier
 $ctcb: cubic-bezier(0.6, 0.1, 0.3, 0.8);

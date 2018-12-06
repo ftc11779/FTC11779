@@ -60,10 +60,17 @@ a.proper-a{
     Custom
 */
 .scrollar-sd-special{will-change:transform;}
-#masthead,#flightdeck,#sponsor{background-color:$ftcwhite;}
-#bow,#sidedeck{background-color:#eee;}
-#bow,#flightdeck,#sidedeck,#sponsor{font-weight:900;} // front of deck of a ship
-.block{position:relative;@extend %fwh;overflow:hidden;}
+// #masthead,#flightdeck,#sponsor{background-color:$ftcwhite;}
+// #bow,#sidedeck{background-color:#eee;}
+// #bow,#flightdeck,#sidedeck,#sponsor{font-weight:900;} // front of deck of a ship
+// .block{position:relative;@extend %fwh;overflow:hidden;}
+.block{
+  position:relative;
+  &-wrapper{
+    position:absolute;width:100%;bottom:0;left:0;right:0;
+    svg{display:block;width:100%;}
+  }
+}
 // .rellax{position:absolute;}
 .column{
   position:relative;float:left;height:100%;width:auto;border-right:1px solid #e0e0e0;z-index:1;
@@ -111,11 +118,11 @@ a.proper-a{
   &-bottom{
     padding-top:4px;
     &-btn{
-      display:inline-block;margin-top:15px;color:$ftcblue;font-size:24px;line-height:1;
+      display:inline-block;margin-top:15px;color:$blue1;font-size:24px;line-height:1;
       @media (min-width: 992px){margin-top:20px;font-size:30px;}
       & a{
-        display:block;padding:8px 24px;border:3px solid $ftcblue;border-radius:50px;
-        &:hover,&:active{color:#fff;background-color:$ftcblue;}
+        display:block;padding:8px 24px;border:3px solid $blue1;border-radius:50px;
+        &:hover,&:active{color:#fff;background-color:$blue1;}
       }
     }
   }
@@ -141,7 +148,7 @@ a.proper-a{
     &-b{height:400px;width:400px;}
   }
   &.sliding{
-    height:180px;width:100%;border-radius:0;background-color:$ftcgreen;
+    height:180px;width:100%;border-radius:0;background-color:$green1;
     @media (min-width: 992px){height:250px;}
     &::before,&::after{
       content:"\0020";position:absolute;height:60px;width:100%;left:0;background-color:inherit;transform:skewY(-10deg);z-index:-1;
@@ -175,7 +182,7 @@ a.proper-a{
     @media (min-width: 992px){top:0;visibility:visible;@include comtra(1s);}
   }
   &-trigger{
-    position:relative;cursor:pointer;padding:1px;background-color:$ftcblack;
+    position:relative;cursor:pointer;padding:1px;background-color:$purple1;
     &-wrapper{
       position:fixed;top:20px;right:15px;z-index:30000;@include comtra(0.6s);
       @media (min-width: 992px){top:30px;right:40px;@include comtra(1.2s);}
@@ -197,23 +204,23 @@ a.proper-a{
   //   filter: url("http://jordanhollinger.com/media/blur.svg#blur"); /* Older FF and others - http://jordanhollinger.com/media/blur.svg */
   //   filter: blur(1.5em);
   // }
-  &-content{position:relative;@extend %fwh;color:$ftcblack;background-color:rgba($ftcpurple, 0.5);z-index:20200;}
+  &-content{position:relative;@extend %fwh;color:$ftcblack;background-color:rgba($purple1, 0.8);z-index:20200;}
   &-navbar{
-    position:relative;color:$ftcgreen;font-size:28px;font-weight:700;line-height:normal;@include talign();text-align:center;
+    position:relative;color:$green1;font-size:28px;font-weight:700;line-height:normal;@include talign();text-align:center;
     @media (min-width: 992px){font-size:40px;}
     & li a{
       display:inline-block;padding:10px 20px;
       & span{
         position:relative;
-        &::before{content:"\0020";position:absolute;height:3px;bottom:1px;left:50%;right:50%;background-color:$ftcgreen;@include comtra();}
+        &::before{content:"\0020";position:absolute;height:3px;bottom:1px;left:50%;right:50%;background-color:$green1;@include comtra();}
         &.on::before,&:hover::before{left:0;right:0;}
       }
       &.special{
         color:#eee;
-        &:hover{background-color:$ftcred;}
+        &:hover{background-color:$red1;}
         & span{
           padding:0 5px;
-          &,&::before{background-color:$ftcred;}
+          &,&::before{background-color:$red1;}
         }
       }
     }
@@ -226,16 +233,16 @@ a.proper-a{
     &-btn{
       position:absolute;left:50%;font-size:20px;text-transform:uppercase;letter-spacing:1px;transform:translateX(-50%) rotate(90deg);
       & a{
-        display:block;position:relative;padding:6px 20px;background-color:$ftcgreen;z-index:4;
-        &::after{content:"\0020";position:absolute;height:100%;width:100%;top:0;left:0;background-color:$ftcgreen;opacity:0.4;z-index:5;@include comtra(500ms);}
-        &:hover::after{width:0;@include comtra(1s);}
+        display:block;position:relative;padding:6px 20px;color:$ftcwhite;background-color:$red1;z-index:4;
+        &::after{content:"\0020";position:absolute;height:100%;width:100%;top:0;left:0;background-color:$red1;opacity:0.4;z-index:5;@include comtra(400ms);}
+        &:hover::after{width:0;@include comtra(800ms);}
       }
       &-sponsor{top:110px;}
       &-contact{
         top:260px;
         & a{
-          background-color:$ftcyellow;
-          &::after{background-color:$ftcyellow;}
+          color:$ftcblack;background-color:$yellow1;
+          &::after{background-color:$yellow1;}
         }
       }
     }

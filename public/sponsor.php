@@ -40,9 +40,9 @@
         <div class="masthead-title"><span>Sponsor</span></div>
       </div>
       <div class="masthead-footer">
-        <a class="masthead-pdf" href="#">
+        <a class="masthead-pdf" href="./sponsorship-packet.pdf" target="_blank" rel="noopener">
           <div class="masthead-pdf-icon"><img src="./lib/svg/pdf.svg" /></div>
-          <div class="masthead-pdf-caption"><span>Sponsorship</span> <span>Package</span></div>
+          <div class="masthead-pdf-caption"><span>Sponsorship</span> <span>Packet</span></div>
         </a>
       </div>
       <div class="masthead-connect">
@@ -71,7 +71,7 @@
           <div class="ss-level-row ss-level-benefits">
             <div class="ss-level-benefit">
               <div class="ss-level-benefit-point"><span></span></div>
-              <div class="ss-level-benefit-content">Sponspor name is listed on our website homepage and sponsorship page</div>
+              <div class="ss-level-benefit-content">Sponspor's name/logo is listed on team website and engineering notebook</div>
             </div>
             <!-- <div class="ss-level-benefit">
               <div class="ss-level-benefit-point"><span></span></div>
@@ -96,7 +96,7 @@
             </div>
             <div class="ss-level-benefit">
               <div class="ss-level-benefit-point"><span></span></div>
-              <div class="ss-level-benefit-content">Sponspor name is ...</div>
+              <div class="ss-level-benefit-content">Sponspor's name/logo is listed on our team apparel</div>
             </div>
           </div>
         </div>
@@ -117,7 +117,7 @@
             </div>
             <div class="ss-level-benefit">
               <div class="ss-level-benefit-point"><span></span></div>
-              <div class="ss-level-benefit-content">Sponspor name is listed at the end of FTC 11779&apos;s video</div>
+              <div class="ss-level-benefit-content">Sponspor's name/logo is listed on our team merchandise</div>
             </div>
           </div>
         </div>
@@ -138,7 +138,7 @@
             </div>
             <div class="ss-level-benefit">
               <div class="ss-level-benefit-point"><span></span></div>
-              <div class="ss-level-benefit-content">Sponsor name is listed on the FTC 11779 robot used in the competition</div>
+              <div class="ss-level-benefit-content">Sponsor's name/logo is listed on our team's signature slot machine</div>
             </div>
           </div>
         </div>
@@ -149,7 +149,7 @@
             <div class="ss-level-col ss-level-icon"><img src="./lib/svg/planet.svg" /></div>
             <div class="ss-level-col ss-level-name">
               <div>Planet</div>
-              <div class="ss-level-money">for<span>$2500</span></div>
+              <div class="ss-level-money">for<span>$2000</span></div>
             </div>
           </div>
           <div class="ss-level-row ss-level-benefits">
@@ -159,7 +159,11 @@
             </div>
             <div class="ss-level-benefit">
               <div class="ss-level-benefit-point"><span></span></div>
-              <div class="ss-level-benefit-content">Sponsor name is listed on the FTC 11779 team apparel and goodies</div>
+              <div class="ss-level-benefit-content">Sponsor's name/logo is listed on our team's robot used in the competition</div>
+            </div>
+            <div class="ss-level-benefit">
+              <div class="ss-level-benefit-point"><span></span></div>
+              <div class="ss-level-benefit-content">Special recognition</div>
             </div>
           </div>
         </div>
@@ -170,11 +174,8 @@
       <div>Some icons are made by Freepik from www.flaticon.com, licensed by CC 3.0 BY</div>
     </div>
 
-    <script type="text/javascript" src="<?php echo JQUERY."jquery.min.js"; ?>"></script>
     <script type="text/javascript" src="./lib/vendor/scrollar-1.0.2/scrollar.js"></script>
-    <script type="text/javascript" src="<?php echo BOOTSTRAP."js/bootstrap.min.js"; ?>"></script>
     <script type="text/javascript" src="<?php echo CUSTOM_JS."ftc11779.js?v=".filemtime(CUSTOM_JS."ftc11779.js"); ?>"></script>
-    <script type="text/javascript" src="<?php echo CUSTOM_JS."sponsor.js?v=".filemtime(CUSTOM_JS."sponsor.js"); ?>"></script>
   </body>
 
 </html>

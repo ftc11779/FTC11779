@@ -9,12 +9,12 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="keywords" content="ftc,ftc11779,ac,acftc,allendalecolumbia,allendalecolumbiaftc" />
     <meta name="description" content="FTC team #11779" />
     <meta name="author" content="parkjongwon.com" />
     <title>Home - FTC 11779</title>
-    <!-- <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="<?php echo BOOTSTRAP."css/bootstrap.min.css?v=".filemtime(BOOTSTRAP."css/bootstrap.min.css"); ?>" />
     <link rel="stylesheet" href="<?php echo CUSTOM_CSS."ftc11779.css?v=".filemtime(CUSTOM_CSS."ftc11779.css"); ?>" />
     <link rel="stylesheet" href="<?php echo CUSTOM_CSS."home.css?v=".filemtime(CUSTOM_CSS."home.css"); ?>" />
@@ -34,220 +34,116 @@
     <?php require_once "./lib/template/navs.php"; ?>
 
     <div id="masthead" class="block">
-      <div class="column columnf column1"></div>
-      <div class="column columnm columnmb column2" style="z-index:5;">
-        <div class="item custom-item-mhl">
-          <div class="box-wrapper box-type-masthead custom-box-mhl">
-            <div class="box-up"><span>F</span>IRST <span>T</span>ech <span>C</span>hallenge</div>
-            <div class="box">
-              <div class="box-content text-uppercase"><span>FTC </span>Team 11779</div>
-            </div>
+      <div class="header-masthead">
+      </div>
+      <div class="body-masthead">
+        <div class="masthead-cover">
+          <div class="masthead-subtitle">FIRST Tech Challenge</div>
+          <div class="masthead-title"><span>Team 11779</span></div>
+          <div class="masthead-btns">
+            <div class="masthead-btn masthead-btn-sponsor"><a href="sponsor.php">Sponsor Us</a></div>
+          </div>
+        </div>
+        <div class="masthead-icons">
+          <div class="masthead-icon masthead-icon-rocket">
+            <img src="./lib/svg/rocket2.svg" />
+          </div>
+          <div class="masthead-icon masthead-icon-robot">
+            <img src="./lib/svg/robot2.svg" />
           </div>
         </div>
       </div>
-      <div class="column columnm column3"></div>
-      <div class="column columnm columnmb columnmbl column4" style="z-index:4;">
-        <div class="item custom-item-mhv">
-          <video class="scrollar-masthead" data-scrollar-speed="-0.2" width="100%" height="auto" autoplay loop muted src="./lib/vid/masthead.mp4">Your browser does not support the video tag.</video>
-        </div>
-        <div class="item custom-item-mhac1">
-          <div class="shape square scrollar-masthead" data-scrollar-speed="0.5" style="transform:translateX(50%) rotate(45deg);"></div>
-        </div>
-        <div class="item custom-item-mhac2">
-          <div class="shape square scrollar-masthead" data-scrollar-speed="0.2" style="transform:translateX(20%) rotate(45deg);"></div>
-        </div>
-        <div class="item custom-item-mhac3">
-          <div class="shape square scrollar-masthead" data-scrollar-speed="0.4" style="transform:rotate(45deg);"></div>
-        </div>
+      <div class="block-wrapper">
+        <svg viewbox="0 0 100 15" preserveAspectRatio="none">
+          <path fill="#fff" d="M0 30 V11 Q30 18 55 12 T100 11 V30z" />
+        </svg>
       </div>
-      <div class="column columnm column5"></div>
-      <div class="column columnl column6"></div>
     </div>
 
     <div id="bow" class="block">
-      <div class="column columnf column1"></div>
-      <div class="column columnm column2">
-        <div class="item custom-item-bww">
-          <div class="scrollar-bow" data-scrollar-speed="-0.3">
-            <div class="word">We</div>
-            <div class="word">are</div>
-            <div class="word">the</div>
-            <div class="word text-uppercase">aces</div>
+      <div class="header-bow"></div>
+      <div class="body-bow body-set1">
+        <div class="gen-row gen-row-left">
+          <div class="gen-row-col gen-row-icon"><img src="./lib/svg/astronaut3.svg" /></div>
+          <div class="gen-row-col gen-row-content">
+            <div class="gen-row-title">We are the <span>ACES</span></div>
+            <div class="gen-row-text">As a robotics team from <a href="https://allendalecolumbia.org/" target="_blank" rel="noopener">Allendale Columbia</a>, Rochester, NY, we participate in <a href="https://www.firstinspires.org/robotics/ftc" target="_blank" rel="noopener nofollow">FIRST Tech Challenge</a>.</div>
           </div>
         </div>
-      </div>
-      <div class="column columnm columnmb column3">
-        <div class="item custom-item-bwi">
-          <img class="scrollar-bow" data-scrollar-speed="0.7" src="./lib/img/sky-jar.jpg" />
-        </div>
-        <div class="item custom-item-bwac2">
-          <div class="shape square scrollar-bow" data-scrollar-speed="-0.4" style="transform:translateX(-50%) rotate(45deg);"></div>
-        </div>
-      </div>
-      <div class="column columnm columnmb columnmbl column4" style="z-index:5;">
-        <div class="item custom-item-bwc">
-          <div class="box-wrapper box-type-masthead-nmf custom-box-bwc scrollar-bow" data-scrollar-speed="0.1">
-            <div class="box">
-              <div class="box-up"><img src="./lib/svg/multiple-19.svg" /></div>
-              <div class="box-content">
-                <div class="word">The <a href="https://www.firstinspires.org/robotics/ftc" target="_blank" rel="noopener"><span>FTC</span></a> TEAM of</div>
-                <div class="word"><a href="https://allendalecolumbia.org" target="_blank" rel="noopener"><span>Allendale Columbia</span></a></div>
-              </div>
+
+        <div class="gen-row gen-row-right">
+          <div class="gen-row-col gen-row-icon"><img src="./lib/svg/robot3.svg" /></div>
+          <div class="gen-row-col gen-row-content">
+            <div class="gen-row-title">We build <span class="yellow">awesome</span> robots</div>
+            <div class="gen-row-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+            <div class="gen-row-footer">
+              <div class="gen-row-btn yellow"><a href="about.php">About Us</a></div>
             </div>
           </div>
         </div>
-        <div class="item custom-item-bwac1">
-          <div class="shape square scrollar-bow" data-scrollar-speed="0.3" style="transform:rotate(45deg);"></div>
+
+        <div class="gen-row gen-row-left">
+          <div class="gen-row-col gen-row-icon"><img src="./lib/svg/calendar2.svg" /></div>
+          <div class="gen-row-col gen-row-content">
+            <div class="gen-row-title">Our season is <span class="blue">decorative</span></div>
+            <div class="gen-row-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+            <div class="gen-row-footer">
+              <div class="gen-row-btn blue"><a href="seasons.php">Our Seasons</a></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="gen-row gen-row-right">
+          <div class="gen-row-col gen-row-icon"><img src="./lib/svg/achievement.svg" /></div>
+          <div class="gen-row-col gen-row-content">
+            <div class="gen-row-title">Winning is <span class="pink">part</span> of us</div>
+            <div class="gen-row-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+            <div class="gen-row-footer">
+              <div class="gen-row-btn pink"><a href="awards.php">Our Awards</a></div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="column columnm column5"></div>
-      <div class="column columnl column6"></div>
+      <div class="body-bow bow-sponsor">
+        <!-- <div class="" -->
+        <div class="gen-row bow-sponsor-line"></div>
+        <div class="bow-sponsor-content">
+          <div class="bow-sponsor-icon"><img src="./lib/svg/help.svg" /></div>
+          <div class="bow-sponsor-title"><a href="sponsor.php"><span>Sponsor Us</span></a></div>
+          <div class="bow-sponsor-subtitle">and be part of our <span>journey</span></div>
+        </div>
+      </div>
+      <div class="block-wrapper">
+        <svg viewbox="0 0 100 15" preserveAspectRatio="none">
+          <path fill="#4412e3" d="M0 30 V11 Q30 18 55 12 T100 11 V30z" />
+        </svg>
+      </div>
     </div>
 
-    <div id="flightdeck" class="block">
-      <div class="column columnf column1"></div>
-      <div class="column columnm column2"></div>
-      <div class="column columnm columnmb column3" style="z-index:5;">
-        <div class="item custom-item-fdt">
-          <div class="box-wrapper custom-box-fdt scrollar-fd" data-scrollar-speed="-0.4">
-            <div class="box">
-              <div class="box-up"><img src="./lib/svg/robot.svg" /></div>
-              <div class="box-content">
-                We build robots with <span>innovation</span> and <span>dedication</span>
-              </div>
-              <div class="box-bottom">
-                <div class="box-bottom-btn custom-box-fdt-btn"><a href="./about.php">about us</a></div>
-              </div>
-            </div>
+    <div id="deck">
+      <div id="contact" class="header-deck"></div>
+      <div class="body-deck body-set1">
+        <!-- <div class="deck-title">Follow our <span>journey</span></div> -->
+        <div class="deck-header">
+          <div class="deck-icon"><img src="./lib/svg/hiking.svg" /></div>
+          <div class="deck-title">Follow our <span>journey</span></div>
+        </div>
+        <div class="deck-body">
+          <div class="deck-row">
+            <div class="deck-col deck-col-name">via <a href="mailto:ftc11779@allendalecolumbia.org"><span>Email</span></a> -</div>
+            <div class="deck-col deck-col-val">ftc11779@allendalecolumbia.org</div>
+          </div>
+          <div class="deck-row">
+            <div class="deck-col deck-col-name">via <a href="tel:5853814560"><span>Phone</span></a> -</div>
+            <div class="deck-col deck-col-val">585-381-4560</div>
           </div>
         </div>
-        <div class="itetm custom-item-fdac1">
-          <div class="shape square scrollar-fd" data-scrollar-speed="0.1" style="transform:translateX(-20%) rotate(45deg);"></div>
-        </div>
-        <div class="itetm custom-item-fdac3">
-          <div class="shape square scrollar-fd" data-scrollar-speed="0.3" style="transform:translateX(-50%) rotate(45deg);"></div>
-        </div>
       </div>
-      <div class="column columnm columnmb columnmbl column4">
-        <div class="item custom-item-fdi">
-          <img class="scrollar-fd" data-scrollar-speed="0.6" src="./lib/img/sky-sphinx.jpg" />
-        </div>
-        <div class="item custom-item-fdac2">
-          <div class="shape square scrollar-fd" data-scrollar-speed="0.2" style="transform:translateX(-20%) rotate(45deg);"></div>
-        </div>
-      </div>
-      <div class="column columnm column5"></div>
-      <div class="column columnl column6"></div>
     </div>
 
-    <div id="sidedeck" class="block">
-      <div class="column columnf column1"></div>
-      <div class="column columnm columnmb column2" style="z-index:5;">
-        <div class="item custom-item-sdl">
-          <div class="word">Passionate</div>
-          <div class="word">Creative</div>
-          <div class="word">Innovative</div>
-        </div>
-        <a href="./seasons.php" class="item custom-item-sdt">
-          <div class="shape sliding scrollar-sd" data-scrollar-speed="0.6">
-            <div class="shape-content">
-              <div class="shape-icon"><img src="./lib/svg/calendar-date-2.svg" /></div>
-              <div class="shape-name"><span>Seasons</span></div>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="column columnm column3"></div>
-      <div class="column columnm columnmb columnmbl column4" style="z-index:5;">
-        <div class="item custom-item-sdr">
-          <div class="word">Skill</div>
-          <div class="word">Experience</div>
-        </div>
-        <a href="./awards.php" class="item custom-item-sdb">
-          <div class="shape sliding scrollar-sd" data-scrollar-speed="-0.4">
-            <div class="shape-content">
-              <div class="shape-icon"><img src="./lib/svg/winner.svg" /></div>
-              <div class="shape-name"><span>Awards</span></div>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="column columnm column5"></div>
-      <div class="column columnl column6"></div>
-    </div>
-
-    <div id="sponsor" class="block">
-      <div class="column columnf column1"></div>
-      <div class="column columnm column2"></div>
-      <div class="column columnm columnmb column3" style="z-index:5">
-        <div class="item custom-item-spt">
-          <div class="box-wrapper custom-box-spt scrollar-sponsor" data-scrollar-speed="0.4">
-            <div class="box">
-              <div class="box-up"><img src="./lib/svg/shaking-hands.svg" /></div>
-              <div class="box-content">Join our journey</div>
-              <div class="box-bottom">
-                <div class="box-bottom-btn custom-box-spt-btn"><a href="./sponsor.php">sponsor us</a></div>
-              </div>
-            </div>
-            <div class="shape sliding">
-              <div class="shape-content">
-                <div class="shape-icon"><img src="./lib/svg/astronaut.svg" /></div>
-                <div class="shape-name"><span>Sponsor</span>Astronaut</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="column columnm column4"></div>
-      <div class="column columnm columnmb columnmbl column5" style="z-index:5">
-        <div class="item custom-item-spb">
-          <div class="box-wrapper custom-box-spb scrollar-sponsor" data-scrollar-speed="-0.4">
-            <div class="shape sliding">
-              <div class="shape-content">
-                <div class="shape-icon"><img src="./lib/svg/planet.svg" /></div>
-                <div class="shape-name"><span>Sponsor</span>Planet</div>
-              </div>
-            </div>
-            <div class="box">
-              <div class="box-up"><img src="./lib/svg/notification-70.svg" /></div>
-              <div class="box-content">Let's talk :)</div>
-              <div class="box-bottom">
-                <div class="box-bottom-btn custom-box-spb-btn"><a href="contact.php">contact us</a></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="column columnl column6"></div>
-    </div>
-
-    <!-- <div class="block">
-      <div class="column columnf column1">
-
-      </div>
-      <div class="column columnm columnmb column2">
-
-      </div>
-      <div class="column columnm column3">
-
-      </div>
-      <div class="column columnm columnmb column4">
-
-      </div>
-      <div class="column columnm column5">
-
-      </div>
-      <div class="column columnl column6">
-
-      </div>
-    </div> -->
-
-
-    <script type="text/javascript" src="<?php echo JQUERY."jquery.min.js"; ?>"></script>
-    <script type="text/javascript" src="./lib/vendor/scrollar-1.0.2/scrollar.js"></script>
-    <script type="text/javascript" src="<?php echo BOOTSTRAP."js/bootstrap.min.js"; ?>"></script>
+    <!-- <script type="text/javascript" src="./lib/vendor/scrollar-1.0.2/scrollar.js"></script> -->
     <script type="text/javascript" src="<?php echo CUSTOM_JS."ftc11779.js?v=".filemtime(CUSTOM_JS."ftc11779.js"); ?>"></script>
-    <script type="text/javascript" src="<?php echo CUSTOM_JS."home.js?v=".filemtime(CUSTOM_JS."home.js"); ?>"></script>
+    <!-- <script type="text/javascript" src="<?php // echo CUSTOM_JS."home.js?v=".filemtime(CUSTOM_JS."home.js"); ?>"></script> -->
   </body>
 
 </html>

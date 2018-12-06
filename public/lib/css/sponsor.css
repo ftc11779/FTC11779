@@ -41,7 +41,7 @@
 }
 @media (min-width: 768px) {
   .masthead-title span {
-    padding: 40px 80px;
+    padding: 35px 80px;
   }
 }
 .masthead-subtitle {
@@ -135,7 +135,7 @@
 }
 @media (min-width: 1440px) {
   .ss-level {
-    max-width: 1250px;
+    max-width: 1100px;
   }
 }
 .ss-level-col {
@@ -175,7 +175,7 @@
     height: 120px;
     width: 120px;
     margin-left: 60px;
-    padding-top: 5px;
+    padding-top: 2px;
   }
 }
 .ss-level-name {

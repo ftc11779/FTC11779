@@ -1,6 +1,6 @@
 "use strict";
 
-(function($){
+(function(){
 
   // $(document).on("scroll.detectScroll", detectScroll);
 
@@ -10,27 +10,27 @@
   //   direction: "vertical",
   // });
 
-  const scrollar = {};
-
-  scrollar.masthead = new Scrollar(".scrollar-masthead", {
-    wrapper: "#masthead",
-  });
-
-  scrollar.bow = new Scrollar(".scrollar-bow", {
-    wrapper: "#bow",
-  });
-
-  scrollar.flightdeck = new Scrollar(".scrollar-fd", {
-    wrapper: "#flightdeck",
-  });
-
-  scrollar.sidedeck = new Scrollar(".scrollar-sd", {
-    wrapper: "#sidedeck",
-  });
-
-  scrollar.sponsor = new Scrollar(".scrollar-sponsor", {
-    wrapper: "#sponsor",
-  });
+  // const scrollar = {};
+  //
+  // scrollar.masthead = new Scrollar(".scrollar-masthead", {
+  //   wrapper: "#masthead",
+  // });
+  //
+  // scrollar.bow = new Scrollar(".scrollar-bow", {
+  //   wrapper: "#bow",
+  // });
+  //
+  // scrollar.flightdeck = new Scrollar(".scrollar-fd", {
+  //   wrapper: "#flightdeck",
+  // });
+  //
+  // scrollar.sidedeck = new Scrollar(".scrollar-sd", {
+  //   wrapper: "#sidedeck",
+  // });
+  //
+  // scrollar.sponsor = new Scrollar(".scrollar-sponsor", {
+  //   wrapper: "#sponsor",
+  // });
 
 
   // var rellax = new Rellax(".rellax");
@@ -49,4 +49,4 @@
   //   // wrapper: ".rellax-wrapper",
   // });
 
-})(jQuery);
+})();

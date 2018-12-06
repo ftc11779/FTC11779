@@ -1,8 +1,8 @@
 "use strict";
 
-(function($){
+(function(){
   const scrollar = {};
-  
+
   scrollar.masthead = new Scrollar(".scrollar-masthead", {
     wrapper: "#masthead",
   });
@@ -22,4 +22,4 @@
   // scrollar.sponsor = new Scrollar(".scrollar-sponsor", {
   //   wrapper: "#sponsor",
   // });
-})(jQuery);
+})();

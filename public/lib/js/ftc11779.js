@@ -1,33 +1,53 @@
 "use strict";
 
-(function($){
+(function(){
 
-  let navTrigLength = parseInt($(".nav-trigger-wrapper").css("transition-duration"), 10) * 1000;
+  let $navTrigWrapper = document.getElementsByClassName("nav-trigger-wrapper")[0];
+  let navTrigLength = parseInt(getComputedStyle($navTrigWrapper)['transitionDuration'], 10) * 1000;
+  let $sense = document.getElementsByClassName("nav-trig-sensitive")[0];
+  let $nav = document.getElementById("nav");
+  let $navTrigIcon = document.getElementsByClassName("nav-trigger-icon")[0];
 
-  let $sense = $(".nav-trig-sensitive");
-  let $nav = $("#nav");
+  $navTrigIcon.addEventListener("click", function(){
+    if (typeof $sense === "undefined" || hasClass($sense, "travelling")) return;
 
-  $(document).on("click", ".nav-trigger-icon", function(){
-    let len = $sense.length;
-    if (!len || $sense.hasClass("travelling")) return;
+    removeClass($sense, "travel-up");
+    removeClass($sense, "travel-down");
+    addClass($sense, "travelling");
 
-    $sense.removeClass("travel-up travel-down");
-    $sense.addClass("travelling");
-
-    if ($sense.hasClass("active")){
+    if (hasClass($sense, "active")){
       // hide nav
-      $nav.removeClass("active");
-      $sense.addClass("travel-down");
-      $sense.removeClass("active");
+      removeClass($nav, "active");
+      addClass($sense, "travel-down");
+      removeClass($sense, "active");
     } else {
       // show nav
-      $nav.addClass("active");
-      $sense.addClass("active travel-up");
+      addClass($nav, "active");
+      addClass($sense, "active");
+      addClass($sense, "travel-up");
     }
 
     setTimeout(function(){
-      $sense.removeClass("travelling");
+      removeClass($sense, "travelling");
     }, navTrigLength);
-  });
+  })
 
-})(jQuery);
+})();
+
+function hasClass(el, className){
+  if (el.classList) return el.classList.contains(className);
+  return !!el.className.match(new RegExp('(\\s|^)' + className + '(\\s|$)'));
+}
+
+function addClass(el, className){
+  if (el.classList) el.classList.add(className)
+  else if (!hasClass(el, className)) el.className += " " + className;
+}
+
+function removeClass(el, className){
+  if (el.classList) el.classList.remove(className)
+  else if (hasClass(el, className)){
+    var reg = new RegExp('(\\s|^)' + className + '(\\s|$)');
+    el.className = el.className.replace(reg, ' ');
+  }
+}
