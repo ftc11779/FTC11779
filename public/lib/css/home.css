@@ -16,17 +16,17 @@
   position: relative;
 }
 .body-masthead {
-  padding: 100px 0;
+  padding: 100px 0 400px;
   color: #fff;
 }
 @media (min-width: 768px) {
   .body-masthead {
-    padding: 150px 0;
+    padding: 100px 0 200px;
   }
 }
 @media (min-width: 1024px) {
   .body-masthead {
-    padding: 200px 0;
+    padding: 150px 0 200px;
   }
 }
 .body-set1 {
@@ -39,6 +39,20 @@
 }
 .body-deck {
   text-align: center;
+}
+
+.header-bow {
+  padding-top: 350px;
+}
+@media (min-width: 768px) {
+  .header-bow {
+    padding-top: 50px;
+  }
+}
+@media (min-width: 1024px) {
+  .header-bow {
+    padding-top: 0;
+  }
 }
 
 .masthead-cover {
@@ -104,13 +118,12 @@
 .masthead-icon-rocket {
   width: 150px;
   left: 30px;
-  bottom: 20px;
+  bottom: 100px;
 }
 @media (min-width: 768px) {
   .masthead-icon-rocket {
     width: 300px;
     left: 40px;
-    bottom: 40px;
   }
 }
 @media (min-width: 1024px) {
@@ -139,10 +152,141 @@
     right: 100px;
   }
 }
+.masthead-items {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: 0;
+  z-index: 10;
+  transform: translateY(50%);
+}
+@media (min-width: 768px) {
+  .masthead-items {
+    display: flex;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+}
+.masthead-item {
+  height: 100%;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+@media (min-width: 768px) {
+  .masthead-item {
+    display: inline-block;
+    flex: 1 33.333333%;
+    max-width: none;
+    padding: 20px;
+  }
+}
+.masthead-item-inner {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 30px 35px;
+  color: #1b1b1b;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 1px 5px 20px 1px rgba(204, 204, 204, 0.35);
+}
+.masthead-item-text, .masthead-item-btn {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  .masthead-item-text, .masthead-item-btn {
+    font-size: 16px;
+  }
+}
+.masthead-item-header {
+  font-size: 14px;
+  display: inline-block;
+  padding-right: 20px;
+}
+.masthead-item-header span {
+  display: block;
+  padding: 7px 8px;
+  color: #fff;
+  border-radius: 8px;
+  font-weight: 300;
+  line-height: 1;
+}
+@media (min-width: 1024px) {
+  .masthead-item-header span {
+    padding: 11px 12px;
+  }
+}
+.masthead-item-header.pink span {
+  background-color: #e0708f;
+}
+.masthead-item-header.yellow span {
+  background-color: #f0e550;
+}
+.masthead-item-header.green span {
+  background-color: #6eedcb;
+}
+.masthead-item-title {
+  padding-top: 16px;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 1;
+}
+@media (min-width: 768px) {
+  .masthead-item-title {
+    padding-top: 24px;
+    font-size: 22px;
+  }
+}
+.masthead-item-title.pink {
+  color: #e0708f;
+}
+.masthead-item-title.yellow {
+  color: #f0e550;
+}
+.masthead-item-title.green {
+  color: #6eedcb;
+}
+.masthead-item-text {
+  padding: 12px 0;
+  color: #aaa;
+  line-height: 1.2;
+  letter-spacing: 0.8px;
+}
+@media (min-width: 768px) {
+  .masthead-item-text {
+    padding: 20px 0;
+  }
+}
+.masthead-item-text.pink {
+  color: #e0708f;
+}
+.masthead-item-text.yellow {
+  color: #f0e550;
+}
+.masthead-item-text.green {
+  color: #6eedcb;
+}
+.masthead-item-btn {
+  color: #4412e3;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.masthead-item-btn a {
+  opacity: 0.7;
+}
+.masthead-item-btn a:hover, .masthead-item-btn a:active {
+  opacity: 1;
+}
 
 .bow-sponsor-line {
   padding: 0 !important;
-  border-top: 1px solid #4412e3;
+  border-top: 1px solid #e0708f;
 }
 .bow-sponsor-content {
   padding: 70px 0 50px;
@@ -203,7 +347,7 @@
 }
 .bow-sponsor-subtitle {
   padding-top: 20px;
-  color: #e0708f;
+  color: #4412e3;
   font-size: 22px;
   font-weight: 700;
 }
@@ -296,7 +440,7 @@
   border-bottom: 1px solid #f0e550;
 }
 .deck-col-val {
-  padding-top: 2px;
+  padding-top: 1px;
 }
 @media (min-width: 768px) {
   .deck-col-val {
@@ -308,7 +452,7 @@
   position: relative;
   max-width: 500px;
   margin: 0 auto;
-  padding: 40px 20px;
+  padding: 50px 20px;
   font-size: 0;
 }
 @media (min-width: 768px) {

@@ -41,7 +41,7 @@
           <div class="masthead-subtitle">FIRST Tech Challenge</div>
           <div class="masthead-title"><span>Team 11779</span></div>
           <div class="masthead-btns">
-            <div class="masthead-btn masthead-btn-sponsor"><a href="sponsor.php">Sponsor Us</a></div>
+            <div class="masthead-btn masthead-btn-contact"><a href="contact.php">Contact Us</a></div>
           </div>
         </div>
         <div class="masthead-icons">
@@ -58,6 +58,32 @@
           <path fill="#fff" d="M0 30 V11 Q30 18 55 12 T100 11 V30z" />
         </svg>
       </div>
+      <div class="masthead-items">
+        <div class="masthead-item">
+          <div class="masthead-item-inner pink">
+            <div class="masthead-item-header pink"><span>&#10004;</span></div>
+            <div class="masthead-item-title pink">About Us</div>
+            <div class="masthead-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</div>
+            <div class="masthead-item-btn"><a href="about.php">more about us</a></div>
+          </div>
+        </div>
+        <div class="masthead-item">
+          <div class="masthead-item-inner yellow">
+            <div class="masthead-item-header yellow"><span>&#10004;</span></div>
+            <div class="masthead-item-title yellow">Contact Us</div>
+            <div class="masthead-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</div>
+            <div class="masthead-item-btn"><a href="about.php">reach us now</a></div>
+          </div>
+        </div>
+        <div class="masthead-item">
+          <div class="masthead-item-inner green">
+            <div class="masthead-item-header green"><span>&#10004;</span></div>
+            <div class="masthead-item-title green">Sponsor Us</div>
+            <div class="masthead-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</div>
+            <div class="masthead-item-btn"><a href="about.php">be our sponsor</a></div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div id="bow" class="block">
@@ -66,8 +92,8 @@
         <div class="gen-row gen-row-left">
           <div class="gen-row-col gen-row-icon"><img src="./lib/svg/astronaut3.svg" /></div>
           <div class="gen-row-col gen-row-content">
-            <div class="gen-row-title">We are the <span>ACES</span></div>
-            <div class="gen-row-text">As a robotics team from <a href="https://allendalecolumbia.org/" target="_blank" rel="noopener">Allendale Columbia</a>, Rochester, NY, we participate in <a href="https://www.firstinspires.org/robotics/ftc" target="_blank" rel="noopener nofollow">FIRST Tech Challenge</a>.</div>
+            <div class="gen-row-title">We are the <span>ACs</span></div>
+            <div class="gen-row-text">A robotics team from <a href="https://allendalecolumbia.org/" target="_blank" rel="noopener">Allendale Columbia</a>, Rochester, NY, we participate in <a href="https://www.firstinspires.org/robotics/ftc" target="_blank" rel="noopener nofollow">FIRST Tech Challenge</a>.</div>
           </div>
         </div>
 
