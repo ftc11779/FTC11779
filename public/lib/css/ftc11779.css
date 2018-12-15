@@ -20,7 +20,7 @@ html, body {
   overflow-x: hidden;
   text-rendering: optimizeLegibility;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   html, body {
     font-size: 18px;
   }

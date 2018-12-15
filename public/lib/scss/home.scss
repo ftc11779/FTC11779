@@ -11,8 +11,8 @@
     @media (min-width: $screenAS){padding:150px 0 200px;}
   }
   &-set1{
-    padding:60px 0;
-    @media (min-width: $screenAT){padding:100px 0;}
+    padding:50px 0;
+    @media (min-width: $screenAT){padding:80px 0;}
   }
   &-deck{text-align:center;}
 }
@@ -20,8 +20,7 @@
 .header{
   &-bow{
     padding-top:350px;
-    @media (min-width: $screenAT){padding-top:50px;}
-    @media (min-width: $screenAS){padding-top:0;}
+    @media (min-width: $screenAT){padding-top:70px;}
   }
 }
 
@@ -39,7 +38,7 @@
   }
   &-btns{padding-top:70px;}
   &-btn{
-    display:inline-block;font-weight:700;
+    display:inline-block;font-weight:700;box-shadow:1px 5px 20px 5px rgba(242, 109, 82, 0.2);
     @media (min-width: $screenAT){font-size:18px;}
     a{
       padding:10px 40px;border-radius:8px;color:#fff;background-color:$orange1;
@@ -67,27 +66,29 @@
   &-item{
     height:100%;width:100%;max-width:300px;margin:0 auto;padding:10px 20px;font-size:16px;
     @media (min-width: $screenAT){display:inline-block;flex:1 33.333333%;max-width:none;padding:20px;}
-    &-inner{
-      display:block;width:100%;max-width:300px;margin:0 auto;padding:30px 35px;color:$ftcblack;background-color:#fff;border-radius:8px;box-shadow:1px 5px 20px 1px rgba(204, 204, 204, 0.35);
-    }
+    &-inner{display:block;width:100%;max-width:300px;margin:0 auto;padding:30px 35px;color:$ftcblack;background-color:#fff;text-align:center;border-radius:8px;box-shadow:1px 5px 20px 1px rgba(204, 204, 204, 0.35);}
     &-text,&-btn{
       font-size:14px;
       @media (min-width: $screenAT){font-size:16px;}
     }
     &-header{
-      font-size:14px;
-      display:inline-block;padding-right:20px;
+      display:inline-block;padding-bottom:16px;padding-right:20px;font-size:14px;
+      @media (min-width: $screenAT){padding-bottom:24px;}
       span{
         display:block;padding:7px 8px;color:#fff;border-radius:8px;font-weight:300;line-height:1;
         @media (min-width: $screenAS){padding:11px 12px;}
+        img{
+          width:16px;
+          @media (min-width: $screenAS){width:20px;}
+        }
       }
       &.pink span{background-color:$pink1;}
       &.yellow span{background-color:$yellow1;}
       &.green span{background-color:$green1;}
     }
     &-title{
-      padding-top:16px;font-weight:900;text-transform:uppercase;line-height:1;
-      @media (min-width: $screenAT){padding-top:24px;font-size:22px;}
+      font-weight:900;text-transform:uppercase;line-height:1;
+      @media (min-width: $screenAT){font-size:22px;}
       &.pink{color:$pink1;}
       &.yellow{color:$yellow1;}
       &.green{color:$green1;}
@@ -98,6 +99,11 @@
       &.pink{color:$pink1;}
       &.yellow{color:$yellow1;}
       &.green{color:$green1;}
+    }
+    &-icon{
+      width:100%;max-width:90px;margin:0 auto;padding:20px 0;
+      @media (min-width: $screenAT){max-width:130px;}
+      & img{height:100%;}
     }
     &-btn{
       color:$purple1;font-weight:700;letter-spacing:1px;
@@ -111,10 +117,9 @@
 
 .bow{
   &-sponsor{
-    &-line{padding:0 !important;border-top:1px solid $pink1;}
     &-content{
-      padding:70px 0 50px;text-align:center;
-      @media (min-width: $screenAS){padding:80px 0;}
+      padding-bottom:60px;text-align:center;
+      @media (min-width: $screenAS){padding-bottom:120px;}
     }
     &-icon{
       height:120px;
@@ -178,10 +183,13 @@
 
 .gen{
   &-row{
-    position:relative;max-width:500px;margin:0 auto;padding:50px 20px;font-size:0;
-    @media (min-width: $screenAT){max-width:850px;padding:60px 30px;}
-    @media (min-width: $screenAS){max-width:1000px;padding-top:80px;padding-bottom:80px;}
-    @media (min-width: $screenAM){max-width:1100px;padding-top:100px;padding-bottom:100px;}
+    position:relative;max-width:500px;margin:30px auto;padding:30px 20px;border-radius:8px;font-size:0;@include comtra();
+    @media (min-width: $screenAT){max-width:900px;margin-top:50px;margin-bottom:50px;padding:50px 30px;box-shadow:1px 5px 20px 1px rgba(204, 204, 204, 0.35);}
+    @media (min-width: $screenAS){max-width:1100px;padding:60px 50px;}
+    @media (min-width: $screenAM){max-width:1200px;padding-top:80px;padding-bottom:80px;}
+    &:hover{
+      @media (min-width: $screenAT){box-shadow:1px 5px 30px 2px rgba(204, 204, 204, 0.6);}
+    }
     &-col{
       font-size:20px;text-align:center;
       @media (min-width: $screenAT){display:inline-block;text-align:left;vertical-align:middle;}
@@ -218,9 +226,8 @@
       padding-bottom:30px;font-size:26px;font-weight:700;line-height:1;
       @media (min-width: $screenAT){padding-bottom:40px;font-size:40px;}
       span{
-        color:$purple1;font-weight:900;
+        color:$blue1;font-weight:900;
         &.yellow{color:$yellow1;}
-        &.blue{color:$blue1;}
         &.pink{color:$pink1;}
       }
     }
@@ -235,7 +242,7 @@
       display:inline-block;font-weight:700;
       @media (min-width: $screenAT){font-size:18px;}
       a{
-        display:inline-block;padding:10px 40px;border-radius:8px;color:#fff;background-color:$purple2;opacity:1;
+        display:block;padding:10px 40px;border-radius:8px;color:#fff;background-color:$purple2;opacity:1;box-shadow:1px 5px 20px 1px rgba(204, 204, 204, 0.35);
         &:hover,&:active{opacity:0.9;}
       }
       &.yellow a{background-color:$yellow1d;}

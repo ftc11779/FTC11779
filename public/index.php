@@ -38,10 +38,10 @@
       </div>
       <div class="body-masthead">
         <div class="masthead-cover">
-          <div class="masthead-subtitle">FIRST Tech Challenge</div>
+          <div class="masthead-subtitle">FIRST Robotics Tech Challenge</div>
           <div class="masthead-title"><span>Team 11779</span></div>
           <div class="masthead-btns">
-            <div class="masthead-btn masthead-btn-contact"><a href="contact.php">Contact Us</a></div>
+            <div class="masthead-btn masthead-btn-contact"><a href="#contact">reach us now</a></div>
           </div>
         </div>
         <div class="masthead-icons">
@@ -61,26 +61,29 @@
       <div class="masthead-items">
         <div class="masthead-item">
           <div class="masthead-item-inner pink">
-            <div class="masthead-item-header pink"><span>&#10004;</span></div>
+            <!-- <div class="masthead-item-header pink"><span><img src="./lib/svg/check-white.svg" /></span></div> -->
             <div class="masthead-item-title pink">About Us</div>
-            <div class="masthead-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</div>
-            <div class="masthead-item-btn"><a href="about.php">more about us</a></div>
+            <div class="masthead-item-icon"><img src="./lib/svg/mac-rocket.svg" /></div>
+            <!-- <div class="masthead-item-text">We are the best FTC team out there. Trust me, I am an engineer.</div> -->
+            <div class="masthead-item-btn"><a href="about.php">learn about us</a></div>
           </div>
         </div>
         <div class="masthead-item">
           <div class="masthead-item-inner yellow">
-            <div class="masthead-item-header yellow"><span>&#10004;</span></div>
-            <div class="masthead-item-title yellow">Contact Us</div>
-            <div class="masthead-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</div>
-            <div class="masthead-item-btn"><a href="about.php">reach us now</a></div>
+            <!-- <div class="masthead-item-header yellow"><span><img src="./lib/svg/check-white.svg" /></span></div> -->
+            <div class="masthead-item-title yellow">Our Seasons</div>
+            <!-- <div class="masthead-item-text">We won so many times in just a few years that winning is not fun.</div> -->
+            <div class="masthead-item-icon"><img src="./lib/svg/wall-calendar.svg" /></div>
+            <div class="masthead-item-btn"><a href="seasons.php">more about seasons</a></div>
           </div>
         </div>
         <div class="masthead-item">
           <div class="masthead-item-inner green">
-            <div class="masthead-item-header green"><span>&#10004;</span></div>
+            <!-- <div class="masthead-item-header green"><span><img src="./lib/svg/check-white.svg" /></span></div> -->
             <div class="masthead-item-title green">Sponsor Us</div>
-            <div class="masthead-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</div>
-            <div class="masthead-item-btn"><a href="about.php">be our sponsor</a></div>
+            <!-- <div class="masthead-item-text">Investing in our team is like investing in bitcoins before it went up.</div> -->
+            <div class="masthead-item-icon"><img src="./lib/svg/meeting.svg" /></div>
+            <div class="masthead-item-btn"><a href="sponsor.php">be our sponsor</a></div>
           </div>
         </div>
       </div>
@@ -92,8 +95,8 @@
         <div class="gen-row gen-row-left">
           <div class="gen-row-col gen-row-icon"><img src="./lib/svg/astronaut3.svg" /></div>
           <div class="gen-row-col gen-row-content">
-            <div class="gen-row-title">We are the <span>ACs</span></div>
-            <div class="gen-row-text">A robotics team from <a href="https://allendalecolumbia.org/" target="_blank" rel="noopener">Allendale Columbia</a>, Rochester, NY, we participate in <a href="https://www.firstinspires.org/robotics/ftc" target="_blank" rel="noopener nofollow">FIRST Tech Challenge</a>.</div>
+            <div class="gen-row-title">We are the <span>AC Aces</span></div>
+            <div class="gen-row-text">We are a robotics team from <a href="https://allendalecolumbia.org/" target="_blank" rel="noopener">Allendale Columbia</a>, Rochester, NY, and we compete in the <a href="https://www.firstinspires.org/robotics/ftc" target="_blank" rel="noopener nofollow">FIRST Tech Challenge</a>.</div>
           </div>
         </div>
 
@@ -101,7 +104,7 @@
           <div class="gen-row-col gen-row-icon"><img src="./lib/svg/robot3.svg" /></div>
           <div class="gen-row-col gen-row-content">
             <div class="gen-row-title">We build <span class="yellow">awesome</span> robots</div>
-            <div class="gen-row-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+            <div class="gen-row-text">We are a diverse team of high school students and faculty with multiple years of experience in robotics.</div>
             <div class="gen-row-footer">
               <div class="gen-row-btn yellow"><a href="about.php">About Us</a></div>
             </div>
@@ -111,10 +114,10 @@
         <div class="gen-row gen-row-left">
           <div class="gen-row-col gen-row-icon"><img src="./lib/svg/calendar2.svg" /></div>
           <div class="gen-row-col gen-row-content">
-            <div class="gen-row-title">Our season is <span class="blue">decorative</span></div>
-            <div class="gen-row-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+            <div class="gen-row-title">Our <span class="blue">2018/2019</span> season</div>
+            <div class="gen-row-text">We are looking forward to the FTC game for 2018/2019, Rover Ruckus, which involves autonomous picking up of minerals.</div>
             <div class="gen-row-footer">
-              <div class="gen-row-btn blue"><a href="seasons.php">Our Seasons</a></div>
+              <div class="gen-row-btn blue"><a href="seasons.php">2018/2019 Season</a></div>
             </div>
           </div>
         </div>
@@ -122,8 +125,8 @@
         <div class="gen-row gen-row-right">
           <div class="gen-row-col gen-row-icon"><img src="./lib/svg/achievement.svg" /></div>
           <div class="gen-row-col gen-row-content">
-            <div class="gen-row-title">Winning is <span class="pink">part</span> of us</div>
-            <div class="gen-row-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+            <div class="gen-row-title">We strive for <span class="pink">awards</span></div>
+            <div class="gen-row-text">We have won numerous awards, including qualifications for Excelsior tournaments and Rockwell Collins Innovate Award.</div>
             <div class="gen-row-footer">
               <div class="gen-row-btn pink"><a href="awards.php">Our Awards</a></div>
             </div>
@@ -132,7 +135,6 @@
       </div>
       <div class="body-bow bow-sponsor">
         <!-- <div class="" -->
-        <div class="gen-row bow-sponsor-line"></div>
         <div class="bow-sponsor-content">
           <div class="bow-sponsor-icon"><img src="./lib/svg/help.svg" /></div>
           <div class="bow-sponsor-title"><a href="sponsor.php"><span>Sponsor Us</span></a></div>

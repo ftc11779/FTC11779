@@ -3,5 +3,171 @@
     background-position: 100% 0;
   }
 }
+.bow-title {
+  padding-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .bow-title {
+    padding-bottom: 30px;
+  }
+}
+.bow-title span {
+  color: #2d7acd;
+}
+.bow-image {
+  max-width: 600px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+@media (min-width: 768px) {
+  .bow-image {
+    padding-bottom: 40px;
+  }
+}
+.bow-image img {
+  border-radius: 8px;
+}
+.bow-desc {
+  color: #a3a3a3;
+  font-size: 14px;
+  word-spacing: 1px;
+  text-align: justify;
+}
+@media (min-width: 768px) {
+  .bow-desc {
+    line-height: 1.5;
+    font-size: 18px;
+    letter-spacing: 0.7px;
+  }
+}
+
+.deck-line {
+  width: 100%;
+  border-top: 2px solid #eee;
+}
+.deck-title span {
+  color: #e0708f;
+}
+.deck-title span.green {
+  color: #6eedcb;
+}
+.deck-person::before, .deck-person::after {
+  content: " ";
+  display: table;
+}
+.deck-person::after {
+  clear: both;
+}
+.deck-person-row {
+  position: relative;
+  float: left;
+  width: 100%;
+  margin: 15px 0;
+  padding: 10px;
+  text-align: center;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .deck-person-row {
+    display: flex;
+    margin: 25px 0;
+    padding: 0;
+  }
+}
+.deck-person-row:first-child {
+  margin-top: 0;
+}
+.deck-person-row:last-child {
+  margin-bottom: 0;
+}
+.deck-person-row:nth-child(2n) {
+  background-color: #f5f5f5;
+}
+.deck-person-avatar, .deck-person-content {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .deck-person-avatar, .deck-person-content {
+    flex: 1;
+  }
+}
+.deck-person-avatar {
+  max-width: 120px;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .deck-person-avatar {
+    max-width: 200px;
+  }
+}
+.deck-person-content {
+  padding: 10px 0;
+}
+@media (min-width: 768px) {
+  .deck-person-content {
+    padding: 10px 40px;
+    text-align: justify;
+  }
+}
+.deck-person-name {
+  font-weight: 700;
+}
+@media (min-width: 768px) {
+  .deck-person-name {
+    font-size: 22px;
+    text-align: left;
+  }
+}
+.deck-person-name span {
+  display: block;
+  color: #ccc;
+  font-size: 0.8em;
+}
+@media (min-width: 768px) {
+  .deck-person-name span {
+    display: inline-block;
+    padding-top: 0;
+    padding-left: 10px;
+  }
+}
+.deck-person-bio {
+  padding-top: 10px;
+  color: #a3a3a3;
+  font-size: 13px;
+}
+@media (min-width: 768px) {
+  .deck-person-bio {
+    font-size: 15px;
+    text-align: justify;
+  }
+}
+@media (min-width: 1440px) {
+  .deck-person-bio {
+    font-size: 18px;
+  }
+}
+.deck-person-contact {
+  padding-top: 5px;
+}
+@media (min-width: 768px) {
+  .deck-person-contact {
+    padding-top: 10px;
+    text-align: left;
+  }
+}
+.deck-person-contact-email span {
+  display: inline-block;
+  font-size: 14px;
+  vertical-align: middle;
+}
+.deck-person-contact-email span:first-child img {
+  height: 22px;
+  margin-right: 5px;
+}
+@media (min-width: 768px) {
+  .deck-person-contact-email span:first-child img {
+    height: 30px;
+  }
+}
 
 /*# sourceMappingURL=about.css.map */

@@ -3,7 +3,7 @@
 /* tags */
 html,body{
   color:$ftcblack;background-color:$ftcwhite;font-size:16px;overflow-x:hidden;text-rendering:optimizeLegibility;
-  @media (min-width: 992px){font-size:18px;}
+  @media (min-width: $screenAT){font-size:18px;}
 }
 body{color:$ftcblack;font-family:$font-stack;}
 ul{margin:0;padding:0;list-style-type:none;}

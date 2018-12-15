@@ -40,7 +40,7 @@
     }
     // bow content
     &-bwc,&-fdt,&-spt,&-spb{
-      color:$ftclgray;font-size:$fontbig_;letter-spacing:1px;word-spacing:1.2px;
+      color:$gray1l;font-size:$fontbig_;letter-spacing:1px;word-spacing:1.2px;
       @media (min-width: 992px){font-size:$fontbig;}
     }
     &-bwc{
@@ -105,7 +105,7 @@
   &-box{
     &-mhl{
       & .box-up{
-        display:none;color:$ftcdgray;font-weight:lighter;word-spacing:1px;letter-spacing:1px;
+        display:none;color:$gray1;font-weight:lighter;word-spacing:1px;letter-spacing:1px;
         & span{display:inline-block;padding-right:1px;font-size:18px;font-weight:bold;}
         @media (min-width: 992px){
           display:inline-block;background-color:$ftcwhite;
