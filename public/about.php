@@ -96,7 +96,6 @@
 
 
     <script type="text/javascript" src="<?php echo CUSTOM_JS."ftc11779.js?v=".filemtime(CUSTOM_JS."ftc11779.js"); ?>"></script>
-    <!-- <script type="text/javascript" src="<?php // echo CUSTOM_JS."about.js?v=".filemtime(CUSTOM_JS."about.js"); ?>"></script> -->
   </body>
 
 </html>

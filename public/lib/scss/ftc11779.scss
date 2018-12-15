@@ -59,6 +59,10 @@ a.proper-a{
 /*
     Custom
 */
+#attribute{
+  font-size:12px;font-weight:normal;text-align:center;
+  & div{padding:0 10px;}
+}
 .scrollar-sd-special{will-change:transform;}
 // #masthead,#flightdeck,#sponsor{background-color:$ftcwhite;}
 // #bow,#sidedeck{background-color:#eee;}
@@ -216,7 +220,7 @@ a.proper-a{
         &.on::before,&:hover::before{left:0;right:0;}
       }
       &.special{
-        color:#eee;
+        color:#eee;border-radius:8px;
         &:hover{background-color:$red1;}
         & span{
           padding:0 5px;

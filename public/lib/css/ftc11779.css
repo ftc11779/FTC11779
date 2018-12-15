@@ -158,6 +158,15 @@ a.proper-a:hover, a.proper-a:active {
 /*
     Custom
 */
+#attribute {
+  font-size: 12px;
+  font-weight: normal;
+  text-align: center;
+}
+#attribute div {
+  padding: 0 10px;
+}
+
 .scrollar-sd-special {
   will-change: transform;
 }
@@ -516,6 +525,7 @@ a.proper-a:hover, a.proper-a:active {
 }
 .nav-navbar li a.special {
   color: #eee;
+  border-radius: 8px;
 }
 .nav-navbar li a.special:hover {
   background-color: #d02120;

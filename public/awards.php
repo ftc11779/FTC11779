@@ -17,6 +17,7 @@
     <!-- <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900" rel="stylesheet"> -->
     <link rel="stylesheet" href="<?php echo BOOTSTRAP."css/bootstrap.min.css?v=".filemtime(BOOTSTRAP."css/bootstrap.min.css"); ?>" />
     <link rel="stylesheet" href="<?php echo CUSTOM_CSS."ftc11779.css?v=".filemtime(CUSTOM_CSS."ftc11779.css"); ?>" />
+    <link rel="stylesheet" href="<?php echo CUSTOM_CSS."nonhome.css?v=".filemtime(CUSTOM_CSS."nonhome.css"); ?>" />
     <link rel="stylesheet" href="<?php echo CUSTOM_CSS."awards.css?v=".filemtime(CUSTOM_CSS."awards.css"); ?>" />
     <noscript>
       You need to enable JavaScript to run this app.
@@ -33,77 +34,39 @@
 
     <?php require_once "./lib/template/navs.php"; ?>
 
-    <div id="masthead" class="block">
-      <div class="column columnf column1 fixer-column-mhc"></div>
-      <div class="column columnm column2"></div>
-      <div class="column columnm columnmb column3" style="z-index:5;background-color:inherit;">
-        <div class="item fixer-item-mhw">
-          <div class="scrollar-masthead" data-scrollar-speed="0.2">
-            <div class="word word-one"><span>Awa</span></div>
+    <div id="wrapper">
+
+      <div id="masthead" class="block">
+        <div class="block-cover pink"></div>
+        <div class="block-content">
+          <div class="body-masthead">
+            <div class="masthead-title">Awards</div>
           </div>
         </div>
-        <div class="item fixer-item-mhbg fixer-item-mhbg-1">
-          <img class="scrollar-masthead" data-scrollar-speed="0.4" src="./lib/img/over-space-pod.jpg" />
-        </div>
       </div>
-      <div class="column columnm columnmb column4">
-        <div class="item fixer-item-mhw">
-          <div class="scrollar-masthead" data-scrollar-speed="-0.2">
-            <div class="word word-two"><span>rds</span></div>
+
+      <div id="bow" class="block nonhome">
+        <div class="block-row">
+          <div class="block-row-inner filler"></div>
+          <div class="block-row-inner">
+            <div class="bow-title block-title">Contents will be updated very shortly.</div>
+            <div class="bow-title block-title">Thank you for your patience!</div>
           </div>
-        </div>
-        <div class="item fixer-item-mhbg fixer-item-mhbg-2">
-          <img class="scrollar-masthead" data-scrollar-speed="-0.4" src="./lib/img/nasa-via-space-pod.jpg" />
+          <div class="block-row-inner filler"></div>
         </div>
       </div>
-      <div class="column columnm column5"></div>
-      <div class="column columnl column6 fixer-column-mhc"></div>
+
+      <div id="sponsor" class="block sponsorus">
+        <div class="sponsorus-content">
+          <div class="sponsorus-btn"><a href="sponsor.php"><span>Sponsor Us</span></a></div>
+          <div class="sponsorus-cover"></div>
+        </div>
+      </div>
+
     </div>
 
-    <div id="bow" class="block">
-      <div class="column columnf column1"></div>
-      <div class="column columnm column2"></div>
-      <div class="column columnm columnmb column3">
 
-      </div>
-      <div class="column columnm columnmb column4">
-
-      </div>
-      <div class="column columnm column5">
-
-      </div>
-      <div class="column columnl column6">
-
-      </div>
-    </div>
-
-    <!-- <div class="block">
-      <div class="column columnf column1">
-
-      </div>
-      <div class="column columnm columnmb column2">
-
-      </div>
-      <div class="column columnm column3">
-
-      </div>
-      <div class="column columnm columnmb column4">
-
-      </div>
-      <div class="column columnm column5">
-
-      </div>
-      <div class="column columnl column6">
-
-      </div>
-    </div> -->
-
-
-    <script type="text/javascript" src="<?php echo JQUERY."jquery.min.js"; ?>"></script>
-    <script type="text/javascript" src="./lib/vendor/scrollar-1.0.2/scrollar.js"></script>
-    <script type="text/javascript" src="<?php echo BOOTSTRAP."js/bootstrap.min.js"; ?>"></script>
     <script type="text/javascript" src="<?php echo CUSTOM_JS."ftc11779.js?v=".filemtime(CUSTOM_JS."ftc11779.js"); ?>"></script>
-    <script type="text/javascript" src="<?php echo CUSTOM_JS."awards.js?v=".filemtime(CUSTOM_JS."awards.js"); ?>"></script>
   </body>
 
 </html>

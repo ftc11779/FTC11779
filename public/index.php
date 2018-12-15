@@ -167,6 +167,9 @@
           </div>
         </div>
       </div>
+      <div id="attribute">
+        <div>Some icons are made by Freepik from www.flaticon.com, licensed by CC 3.0 BY</div>
+      </div>
     </div>
 
     <!-- <script type="text/javascript" src="./lib/vendor/scrollar-1.0.2/scrollar.js"></script> -->

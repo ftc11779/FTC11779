@@ -38,6 +38,12 @@
   opacity: 0.7;
   z-index: 1;
 }
+.block-cover.green {
+  background-color: #6eedcb;
+}
+.block-cover.pink {
+  background-color: #e0708f;
+}
 .block-content {
   position: relative;
   z-index: 2;
@@ -132,9 +138,6 @@
   .masthead-title {
     font-size: 80px;
   }
-}
-.masthead-title.pink {
-  color: #e0708f;
 }
 
 .sponsorus {
