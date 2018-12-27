@@ -66,7 +66,13 @@
   &-item{
     height:100%;width:100%;max-width:300px;margin:0 auto;padding:10px 20px;font-size:16px;
     @media (min-width: $screenAT){display:inline-block;flex:1 33.333333%;max-width:none;padding:20px;}
-    &-inner{display:block;width:100%;max-width:300px;margin:0 auto;padding:30px 35px;color:$ftcblack;background-color:#fff;text-align:center;border-radius:8px;box-shadow:1px 5px 20px 1px rgba(204, 204, 204, 0.35);}
+    &-inner{
+      display:block;width:100%;max-width:300px;margin:0 auto;padding:30px 35px;color:$ftcblack;background-color:#fff;text-align:center;border-radius:8px;box-shadow:1px 5px 20px 1px rgba(204, 204, 204, 0.35);
+      &:hover,&:active{
+        box-shadow:1px 5px 20px 1px rgba(204, 204, 204, 0.7);
+      }
+    }
+    &:hover &-btn,&:active &-btn{opacity:1;}
     &-text,&-btn{
       font-size:14px;
       @media (min-width: $screenAT){font-size:16px;}
@@ -105,13 +111,7 @@
       @media (min-width: $screenAT){max-width:130px;}
       & img{height:100%;}
     }
-    &-btn{
-      color:$purple1;font-weight:700;letter-spacing:1px;
-      a{
-        opacity:0.7;
-        &:hover,&:active{opacity:1;}
-      }
-    }
+    &-btn{color:$purple1;font-weight:700;letter-spacing:1px;opacity:0.7;@include comtras("opacity", 300ms)}
   }
 }
 

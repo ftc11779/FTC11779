@@ -193,6 +193,12 @@
   border-radius: 8px;
   box-shadow: 1px 5px 20px 1px rgba(204, 204, 204, 0.35);
 }
+.masthead-item-inner:hover, .masthead-item-inner:active {
+  box-shadow: 1px 5px 20px 1px rgba(204, 204, 204, 0.7);
+}
+.masthead-item:hover .masthead-item-btn, .masthead-item:active .masthead-item-btn {
+  opacity: 1;
+}
 .masthead-item-text, .masthead-item-btn {
   font-size: 14px;
 }
@@ -299,12 +305,8 @@
   color: #4412e3;
   font-weight: 700;
   letter-spacing: 1px;
-}
-.masthead-item-btn a {
   opacity: 0.7;
-}
-.masthead-item-btn a:hover, .masthead-item-btn a:active {
-  opacity: 1;
+  transition: opacity 300ms cubic-bezier(0.6, 0.1, 0.3, 0.8);
 }
 
 .bow-sponsor-content {

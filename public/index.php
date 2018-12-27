@@ -60,31 +60,31 @@
       </div>
       <div class="masthead-items">
         <div class="masthead-item">
-          <div class="masthead-item-inner pink">
+          <a class="masthead-item-inner pink" href="about.php">
             <!-- <div class="masthead-item-header pink"><span><img src="./lib/svg/check-white.svg" /></span></div> -->
             <div class="masthead-item-title pink">About Us</div>
             <div class="masthead-item-icon"><img src="./lib/svg/mac-rocket.svg" /></div>
             <!-- <div class="masthead-item-text">We are the best FTC team out there. Trust me, I am an engineer.</div> -->
-            <div class="masthead-item-btn"><a href="about.php">learn about us</a></div>
-          </div>
+            <div class="masthead-item-btn">learn about us</div>
+          </a>
         </div>
         <div class="masthead-item">
-          <div class="masthead-item-inner yellow">
+          <a class="masthead-item-inner yellow" href="seasons.php">
             <!-- <div class="masthead-item-header yellow"><span><img src="./lib/svg/check-white.svg" /></span></div> -->
             <div class="masthead-item-title yellow">Our Seasons</div>
             <!-- <div class="masthead-item-text">We won so many times in just a few years that winning is not fun.</div> -->
             <div class="masthead-item-icon"><img src="./lib/svg/wall-calendar.svg" /></div>
-            <div class="masthead-item-btn"><a href="seasons.php">more about seasons</a></div>
-          </div>
+            <div class="masthead-item-btn">more about seasons</div>
+          </a>
         </div>
         <div class="masthead-item">
-          <div class="masthead-item-inner green">
+          <a class="masthead-item-inner green" href="sponsor.php">
             <!-- <div class="masthead-item-header green"><span><img src="./lib/svg/check-white.svg" /></span></div> -->
             <div class="masthead-item-title green">Sponsor Us</div>
             <!-- <div class="masthead-item-text">Investing in our team is like investing in bitcoins before it went up.</div> -->
             <div class="masthead-item-icon"><img src="./lib/svg/meeting.svg" /></div>
-            <div class="masthead-item-btn"><a href="sponsor.php">be our sponsor</a></div>
-          </div>
+            <div class="masthead-item-btn">be our sponsor</div>
+          </a>
         </div>
       </div>
     </div>
